@@ -1,0 +1,6 @@
+framework module Pods_CHShareKit_Example {
+  umbrella header "Pods-CHShareKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

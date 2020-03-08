@@ -1,0 +1,16 @@
+PODS:
+  - CHShareKit (0.1.0)
+
+DEPENDENCIES:
+  - CHShareKit (from `../`)
+
+EXTERNAL SOURCES:
+  CHShareKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CHShareKit: 97b58f3e596d31ffe243ce6de2b72817ff335b17
+
+PODFILE CHECKSUM: e5a57fe487c35de70e44c7e8466f94653c8c9d16
+
+COCOAPODS: 1.9.0
