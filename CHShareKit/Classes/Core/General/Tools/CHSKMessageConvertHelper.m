@@ -6,9 +6,6 @@
 //
 
 #import "CHSKMessageConvertHelper.h"
-
-#import "CHSKShareMessage.h"
-
 #import "CHSKImageDownloader.h"
 #import "NSError+CHShareKit.h"
 #import <CHCategories/CHCategories.h>
@@ -75,7 +72,7 @@
     __block NSError *error = nil;
     if ([image isKindOfClass:[UIImage class]]) {
         if (shouldAdjustImageSize) {
-            imageData = [self ch_resetImageDataWithImage:image imageSize:imageSize maxFileSize:fileSize];
+            imageData = [self resetImageDataWithImage:image imageSize:imageSize maxFileSize:fileSize];
         } else {
             imageData = [image ch_compressToJPEGFormatDataWithFactor:CHSKShareImageCompressionFactor maxFileSize:fileSize];
         }
@@ -122,7 +119,7 @@
                 }
             }
             
-            imageData = [self ch_resetImageDataWithImage:aImage imageSize:imageSize maxFileSize:fileSize];
+            imageData = [self resetImageDataWithImage:aImage imageSize:imageSize maxFileSize:fileSize];
             if (!imageData) {
                 error = [NSError ch_sk_errorWithCode:CHSKErrorCodeInvalidMessageImages];
                 !completionHandler ?: completionHandler(nil, nil, error);
@@ -151,7 +148,7 @@
     }];
 }
 
-+ (NSData *)ch_resetImageDataWithImage:(UIImage *)image imageSize:(CGSize)imageSize maxFileSize:(u_int64_t)fileSize{
++ (NSData *)resetImageDataWithImage:(UIImage *)image imageSize:(CGSize)imageSize maxFileSize:(u_int64_t)fileSize{
     UIImage *buffer = [image ch_imageByResizeToSize:imageSize contentMode:UIViewContentModeScaleAspectFill];
     return [buffer ch_compressToJPEGFormatDataWithFactor:1e-10 maxFileSize:fileSize];
 }

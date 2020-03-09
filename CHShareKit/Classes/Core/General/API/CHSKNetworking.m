@@ -1,6 +1,6 @@
 //
 //  CHSKNetworking.m
-//  HDLive
+//  
 //
 //  Created by CHwang on 2019/5/10.
 //
@@ -58,7 +58,7 @@
 #pragma mark - setters/getters
 - (AFHTTPSessionManager *)HTTPSessionManager {
     if (!_HTTPSessionManager) {
-        NSURL *baseURL = [NSURL URLWithString:CH_SK_BASE_HOST];
+        NSURL *baseURL = [NSURL URLWithString:nil];
         _HTTPSessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:baseURL];
         
         AFJSONResponseSerializer *jsonResponseSerializer = [AFJSONResponseSerializer serializer];

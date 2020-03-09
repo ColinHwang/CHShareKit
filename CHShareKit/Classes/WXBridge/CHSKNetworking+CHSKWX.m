@@ -1,6 +1,6 @@
 //
 //  CHSKNetworking+CHSKWX.m
-//  HDLive
+//  
 //
 //  Created by CHwang on 2019/5/10.
 //
@@ -10,6 +10,7 @@
 #import "CHSKWXError.h"
 
 #import "CHSKPrivateDefines.h"
+#import "CHSKWXAPIDefines.h"
 #import "NSError+CHShareKit.h"
 #import <YYModel/YYModel.h>
 
@@ -20,7 +21,7 @@
                        appSecret:(NSString *)appSecret
                          success:(void (^)(id data))success
                          failure:(void (^)(NSError *error))failure {
-    NSString *URLString = @"https://api.weixin.qq.com/sns/oauth2/access_token";
+    NSString *URLString = [CH_SK_WX_BASE_HOST stringByAppendingPathComponent:CH_SK_WX_API_ACCESS_TOKEN];
     
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"appid"] = CH_SK_STR_AVOID_NIL(appId);
@@ -46,7 +47,7 @@
                               openId:(NSString *)openId
                              success:(void (^)(id data))success
                              failure:(void (^)(NSError *error))failure {
-    NSString *URLString = @"https://api.weixin.qq.com/sns/userinfo";
+    NSString *URLString = [CH_SK_WX_BASE_HOST stringByAppendingPathComponent:CH_SK_WX_API_USER_INFO];
     
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"access_token"] = CH_SK_STR_AVOID_NIL(accessToken);

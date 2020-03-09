@@ -1,6 +1,6 @@
 //
 //  CHSKCredential.h
-//  HDLive
+//  
 //
 //  Created by CHwang on 2019/5/10.
 //

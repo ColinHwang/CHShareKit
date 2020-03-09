@@ -13,9 +13,7 @@
 #import <CHCategories/CHCategories.h>
 #import "CHSKCheckHelper.h"
 #import "CHSKMessageConvertHelper.h"
-#import "CHSKNetworking+CHSKWX.h"
 #import "CHSKPrivateDefines.h"
-#import "CHSKWXCredential.h"
 #import "NSError+CHShareKit.h"
 #import <YYModel/YYModel.h>
 #import "CHSKPlatformBridge.h"
