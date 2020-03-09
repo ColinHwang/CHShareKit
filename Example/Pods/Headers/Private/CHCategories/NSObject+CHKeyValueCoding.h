@@ -1,0 +1,1 @@
+../../../CHCategories/CHCategories/Classes/Foundation/NSObject/NSObject+CHKeyValueCoding.h

@@ -1,0 +1,1 @@
+../../../../../CHShareKit/Classes/Core/General/Protocol/CHSKShareBridgeProtocol.h

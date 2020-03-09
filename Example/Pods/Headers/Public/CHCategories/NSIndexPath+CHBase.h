@@ -1,0 +1,1 @@
+../../../CHCategories/CHCategories/Classes/Foundation/NSIndexPath/NSIndexPath+CHBase.h

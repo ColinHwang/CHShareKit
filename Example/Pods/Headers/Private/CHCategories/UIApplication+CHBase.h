@@ -1,0 +1,1 @@
+../../../CHCategories/CHCategories/Classes/UIKit/UIApplication/UIApplication+CHBase.h

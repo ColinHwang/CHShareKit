@@ -1,0 +1,1 @@
+../../../CHCategories/CHCategories/Classes/Foundation/NSURL/NSURL+CHBase.h

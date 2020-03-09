@@ -1,0 +1,1 @@
+../../../CHCategories/CHCategories/Classes/UIKit/UIImage/UIImage+CHGIFImage.h

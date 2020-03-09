@@ -1,0 +1,1 @@
+../../../CHCategories/CHCategories/Classes/Foundation/NSData/NSData+CHBase.h

@@ -1,0 +1,1 @@
+../../../CHCategories/CHCategories/Classes/UIKit/UITabBarItem/UITabBarItem+CHBase.h

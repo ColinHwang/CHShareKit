@@ -42,6 +42,15 @@
 
         ]
       }
+    },
+    {
+      "name": "WXBridge",
+      "source_files": "CHShareKit/Classes/WXBridge/**/*.{h,m}",
+      "dependencies": {
+        "WechatOpenSDK": [
+
+        ]
+      }
     }
   ]
 }

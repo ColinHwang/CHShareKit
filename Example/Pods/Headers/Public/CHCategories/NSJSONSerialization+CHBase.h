@@ -1,0 +1,1 @@
+../../../CHCategories/CHCategories/Classes/Foundation/NSJSONSerialization/NSJSONSerialization+CHBase.h

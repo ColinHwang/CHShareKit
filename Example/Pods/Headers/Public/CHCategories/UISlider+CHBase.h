@@ -1,0 +1,1 @@
+../../../CHCategories/CHCategories/Classes/UIKit/UISlider/UISlider+CHBase.h

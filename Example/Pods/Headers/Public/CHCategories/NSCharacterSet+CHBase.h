@@ -1,0 +1,1 @@
+../../../CHCategories/CHCategories/Classes/Foundation/NSCharacterSet/NSCharacterSet+CHBase.h

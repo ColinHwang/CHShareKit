@@ -1,0 +1,1 @@
+../../../CHCategories/CHCategories/Classes/Foundation/NSFileManager/NSFileManager+CHBase.h

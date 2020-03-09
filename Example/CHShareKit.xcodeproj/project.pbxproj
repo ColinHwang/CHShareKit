@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		203E42F5AFDB6D6E83766802 /* Pods_CHShareKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B080E38254333A9A56AAF0D /* Pods_CHShareKit_Tests.framework */; };
+		46BB3839A75F4FE145C3955F /* libPods-CHShareKit_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B96CE0B44CCC3595D261702E /* libPods-CHShareKit_Tests.a */; };
+		4B5E12DB43A48F6F02F7FB0B /* libPods-CHShareKit_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FED9A324C959B299CB66A02 /* libPods-CHShareKit_Example.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,7 +24,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		BB43F1943E22E88ED52E8738 /* Pods_CHShareKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA4F4CE35F58F9CE75798C3 /* Pods_CHShareKit_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FED9A324C959B299CB66A02 /* libPods-CHShareKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CHShareKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DA262067B38E9493C7E886 /* Pods-CHShareKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHShareKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CHShareKit_Tests/Pods-CHShareKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3B080E38254333A9A56AAF0D /* Pods_CHShareKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHShareKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FA4F4CE35F58F9CE75798C3 /* Pods_CHShareKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHShareKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* CHShareKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHShareKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,6 +64,7 @@
 		7BAEB351B21152631C9BBF8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A61A7325134F6A90BED7144F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B96CE0B44CCC3595D261702E /* libPods-CHShareKit_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CHShareKit_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2BC4713938FBE37843E882 /* Pods-CHShareKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHShareKit_Example.release.xcconfig"; path = "Target Support Files/Pods-CHShareKit_Example/Pods-CHShareKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FBB9FDEC366DDDA176BC85FC /* Pods-CHShareKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHShareKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-CHShareKit_Example/Pods-CHShareKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				BB43F1943E22E88ED52E8738 /* Pods_CHShareKit_Example.framework in Frameworks */,
+				4B5E12DB43A48F6F02F7FB0B /* libPods-CHShareKit_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				203E42F5AFDB6D6E83766802 /* Pods_CHShareKit_Tests.framework in Frameworks */,
+				46BB3839A75F4FE145C3955F /* libPods-CHShareKit_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +123,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				4FA4F4CE35F58F9CE75798C3 /* Pods_CHShareKit_Example.framework */,
-				3B080E38254333A9A56AAF0D /* Pods_CHShareKit_Tests.framework */,
+				1FED9A324C959B299CB66A02 /* libPods-CHShareKit_Example.a */,
+				B96CE0B44CCC3595D261702E /* libPods-CHShareKit_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,7 +207,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				136B137BBCC2E94DCBD04803 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,32 +294,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		136B137BBCC2E94DCBD04803 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CHShareKit_Example/Pods-CHShareKit_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/CHCategories/CHCategories.framework",
-				"${BUILT_PRODUCTS_DIR}/CHShareKit/CHShareKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHCategories.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHShareKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CHShareKit_Example/Pods-CHShareKit_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		961BE1238E7B04E375792701 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

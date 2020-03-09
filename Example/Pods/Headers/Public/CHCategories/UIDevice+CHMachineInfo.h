@@ -1,0 +1,1 @@
+../../../CHCategories/CHCategories/Classes/UIKit/UIDevice/UIDevice+CHMachineInfo.h

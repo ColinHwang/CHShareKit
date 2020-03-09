@@ -1,0 +1,1 @@
+../../../../../CHShareKit/Classes/WXBridge/CHSKWXBridge.h
