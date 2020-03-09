@@ -44,6 +44,15 @@
       }
     },
     {
+      "name": "QQBridge",
+      "source_files": "CHShareKit/Classes/QQBridge/**/*.{h,m}",
+      "dependencies": {
+        "CHQQSDK": [
+
+        ]
+      }
+    },
+    {
       "name": "WXBridge",
       "source_files": "CHShareKit/Classes/WXBridge/**/*.{h,m}",
       "dependencies": {
