@@ -15,10 +15,17 @@ Pod::Spec.new do |s|
   s.author           = { 'ColinHwang' => 'chwang7158@gmail.com' }
   s.source           = { :git => 'https://github.com/ColinHwang/CHShareKit.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
-  s.source_files = 'CHShareKit/Classes/**/*'
+  s.public_header_files = 'CHShareKit/Classes/CHShareKit.h'
+  s.source_files = 'CHShareKit/Classes/CHShareKit.h'
   s.requires_arc = true
-  s.dependency 'AFNetworking'
-  s.dependency 'CHCategories'
-  s.dependency 'SDWebImage'
-  s.dependency 'YYModel'
+  s.frameworks = 'Foundation', 'UIKit'
+  
+  # Core
+  s.subspec 'Core' do |core|
+      core.source_files = 'CHShareKit/Classes/Core/**/*.{h,m}'
+      core.dependency 'AFNetworking'
+      core.dependency 'CHCategories'
+      core.dependency 'SDWebImage'
+      core.dependency 'YYModel'
+  end
 end

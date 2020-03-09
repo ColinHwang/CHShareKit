@@ -17,20 +17,31 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "CHShareKit/Classes/**/*",
+  "public_header_files": "CHShareKit/Classes/CHShareKit.h",
+  "source_files": "CHShareKit/Classes/CHShareKit.h",
   "requires_arc": true,
-  "dependencies": {
-    "AFNetworking": [
+  "frameworks": [
+    "Foundation",
+    "UIKit"
+  ],
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "CHShareKit/Classes/Core/*.{h,m}",
+      "dependencies": {
+        "AFNetworking": [
 
-    ],
-    "CHCategories": [
+        ],
+        "CHCategories": [
 
-    ],
-    "SDWebImage": [
+        ],
+        "SDWebImage": [
 
-    ],
-    "YYModel": [
+        ],
+        "YYModel": [
 
-    ]
-  }
+        ]
+      }
+    }
+  ]
 }

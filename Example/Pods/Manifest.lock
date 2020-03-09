@@ -384,6 +384,8 @@ PODS:
     - "CHCategories/Foundation/NSObject/NSObject+CHBase"
     - "CHCategories/Foundation/NSValue/NSValue+CHBase"
   - CHShareKit (0.0.1):
+    - CHShareKit/Core (= 0.0.1)
+  - CHShareKit/Core (0.0.1):
     - AFNetworking
     - CHCategories
     - SDWebImage
@@ -410,7 +412,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CHCategories: 7c4507d75f150111c507f8648a6e162a2af71be6
-  CHShareKit: 8657d42d6543f688799aed45e1e4be92661c0d4b
+  CHShareKit: 7d179f66a478427f1ad8c602b8c7281c03679d3a
   SDWebImage: 21b19f56b4226cdfe3aefe4e6848dc43ed129a86
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
