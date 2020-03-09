@@ -9,8 +9,53 @@
 /* Begin PBXBuildFile section */
 		01DA66D1F2BC2C92371ADB8D908DB821 /* CHShareKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD02F162CB3EA148CC6B66EC2AE6FE44 /* CHShareKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		065F8EC36702A54D410FD546DB6F703D /* Pods-CHShareKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 102D04C8CA25F99AE55AED4067EEA485 /* Pods-CHShareKit_Tests-dummy.m */; };
+		3BDC9BED2414B926002FBD28 /* CHShareKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BB72414B926002FBD28 /* CHShareKit.h */; };
+		3BDC9BEE2414B926002FBD28 /* CHSKPlatformConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BB92414B926002FBD28 /* CHSKPlatformConfiguration.h */; };
+		3BDC9BEF2414B926002FBD28 /* CHSKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BBA2414B926002FBD28 /* CHSKUser.m */; };
+		3BDC9BF02414B926002FBD28 /* CHSKShareMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BBB2414B926002FBD28 /* CHSKShareMessage.m */; };
+		3BDC9BF12414B926002FBD28 /* CHSKShare.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BBC2414B926002FBD28 /* CHSKShare.h */; };
+		3BDC9BF22414B926002FBD28 /* CHSKPlatformBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BBF2414B926002FBD28 /* CHSKPlatformBridge.m */; };
+		3BDC9BF32414B926002FBD28 /* CHSKImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BC02414B926002FBD28 /* CHSKImageDownloader.h */; };
+		3BDC9BF42414B926002FBD28 /* CHSKMessageConvertHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BC12414B926002FBD28 /* CHSKMessageConvertHelper.m */; };
+		3BDC9BF52414B926002FBD28 /* CHSKShareBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BC22414B926002FBD28 /* CHSKShareBridge.h */; };
+		3BDC9BF62414B926002FBD28 /* CHSKCheckHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BC32414B926002FBD28 /* CHSKCheckHelper.m */; };
+		3BDC9BF72414B926002FBD28 /* CHSKMessageConvertHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BC42414B926002FBD28 /* CHSKMessageConvertHelper.h */; };
+		3BDC9BF82414B926002FBD28 /* CHSKImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BC52414B926002FBD28 /* CHSKImageDownloader.m */; };
+		3BDC9BF92414B926002FBD28 /* CHSKPlatformBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BC62414B926002FBD28 /* CHSKPlatformBridge.h */; };
+		3BDC9BFA2414B926002FBD28 /* CHSKShareBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BC72414B926002FBD28 /* CHSKShareBridge.m */; };
+		3BDC9BFB2414B926002FBD28 /* CHSKCheckHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BC82414B926002FBD28 /* CHSKCheckHelper.h */; };
+		3BDC9BFC2414B926002FBD28 /* CHSKShareBridgeProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BCA2414B926002FBD28 /* CHSKShareBridgeProtocol.h */; };
+		3BDC9BFD2414B926002FBD28 /* CHSKDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BCC2414B926002FBD28 /* CHSKDefines.h */; };
+		3BDC9BFE2414B926002FBD28 /* CHSKPrivateDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BCD2414B926002FBD28 /* CHSKPrivateDefines.h */; };
+		3BDC9BFF2414B926002FBD28 /* CHSKDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BCE2414B926002FBD28 /* CHSKDefines.m */; };
+		3BDC9C002414B926002FBD28 /* CHSKPrivateDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BCF2414B926002FBD28 /* CHSKPrivateDefines.m */; };
+		3BDC9C012414B926002FBD28 /* CHSKWXError.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BD12414B926002FBD28 /* CHSKWXError.m */; };
+		3BDC9C022414B926002FBD28 /* CHSKWXCredential.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BD22414B926002FBD28 /* CHSKWXCredential.h */; };
+		3BDC9C032414B926002FBD28 /* CHSKWXError.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BD32414B926002FBD28 /* CHSKWXError.h */; };
+		3BDC9C042414B926002FBD28 /* CHSKWXCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BD42414B926002FBD28 /* CHSKWXCredential.m */; };
+		3BDC9C052414B926002FBD28 /* CHSKNetworking+JXSKWX.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BD62414B926002FBD28 /* CHSKNetworking+JXSKWX.m */; };
+		3BDC9C062414B926002FBD28 /* CHSKNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BD72414B926002FBD28 /* CHSKNetworking.h */; };
+		3BDC9C072414B926002FBD28 /* CHSKAPIDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BD82414B926002FBD28 /* CHSKAPIDefines.m */; };
+		3BDC9C082414B926002FBD28 /* CHSKNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BD92414B926002FBD28 /* CHSKNetworking.m */; };
+		3BDC9C092414B926002FBD28 /* CHSKNetworking+JXSKWX.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BDA2414B926002FBD28 /* CHSKNetworking+JXSKWX.h */; };
+		3BDC9C0A2414B926002FBD28 /* CHSKAPIDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BDB2414B926002FBD28 /* CHSKAPIDefines.h */; };
+		3BDC9C0B2414B926002FBD28 /* NSError+CHShareKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BDD2414B926002FBD28 /* NSError+CHShareKit.m */; };
+		3BDC9C0C2414B926002FBD28 /* NSArray+CHShareKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BDE2414B926002FBD28 /* NSArray+CHShareKit.m */; };
+		3BDC9C0D2414B926002FBD28 /* NSString+CHShareKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BDF2414B926002FBD28 /* NSString+CHShareKit.m */; };
+		3BDC9C0E2414B926002FBD28 /* NSObject+CHShareKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BE02414B926002FBD28 /* NSObject+CHShareKit.m */; };
+		3BDC9C0F2414B926002FBD28 /* NSURL+CHShareKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BE12414B926002FBD28 /* NSURL+CHShareKit.m */; };
+		3BDC9C102414B926002FBD28 /* NSString+CHShareKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BE22414B926002FBD28 /* NSString+CHShareKit.h */; };
+		3BDC9C112414B926002FBD28 /* NSArray+CHShareKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BE32414B926002FBD28 /* NSArray+CHShareKit.h */; };
+		3BDC9C122414B926002FBD28 /* NSError+CHShareKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BE42414B926002FBD28 /* NSError+CHShareKit.h */; };
+		3BDC9C132414B926002FBD28 /* NSURL+CHShareKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BE52414B926002FBD28 /* NSURL+CHShareKit.h */; };
+		3BDC9C142414B926002FBD28 /* NSObject+CHShareKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BE62414B926002FBD28 /* NSObject+CHShareKit.h */; };
+		3BDC9C152414B926002FBD28 /* CHSKCredential.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BE72414B926002FBD28 /* CHSKCredential.h */; };
+		3BDC9C162414B926002FBD28 /* CHSKShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BE82414B926002FBD28 /* CHSKShare.m */; };
+		3BDC9C172414B926002FBD28 /* CHSKShareMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BE92414B926002FBD28 /* CHSKShareMessage.h */; };
+		3BDC9C182414B926002FBD28 /* CHSKUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BEA2414B926002FBD28 /* CHSKUser.h */; };
+		3BDC9C192414B926002FBD28 /* CHSKPlatformConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BEB2414B926002FBD28 /* CHSKPlatformConfiguration.m */; };
+		3BDC9C1A2414B926002FBD28 /* CHSKCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BEC2414B926002FBD28 /* CHSKCredential.m */; };
 		58F1FAFA7C366216ADE09BA75D1A4AAB /* CHShareKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB10C978A7BAE0B9062086284FC8525 /* CHShareKit-dummy.m */; };
-		5945E291EBB2AC71FA38034BEBA06CC2 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = AF01E8AEADF8057E253AB01B42EEAA18 /* ReplaceMe.m */; };
 		68970FDC37FE7B91BE09439ED2D195F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		9DC0454C4DE2D50C6D466CF322426529 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		C711F2BD61B4F45ED8B4FD05C516ACFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -37,30 +82,75 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06B81792663F8C57816BF932713BB240 /* CHShareKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CHShareKit.framework; path = CHShareKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06B81792663F8C57816BF932713BB240 /* CHShareKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CHShareKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B095897DB5F83851E35528490BA16B9 /* Pods-CHShareKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CHShareKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		102D04C8CA25F99AE55AED4067EEA485 /* Pods-CHShareKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CHShareKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		1C814E7CAD068B6D604A4DFF07CF6063 /* Pods-CHShareKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CHShareKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		2058ED26E62C220BD41F6D2576BB10E1 /* Pods-CHShareKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CHShareKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		301A49AF085F7EDA6D91D854AED84590 /* CHShareKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CHShareKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		301A49AF085F7EDA6D91D854AED84590 /* CHShareKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CHShareKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3BDC9BB72414B926002FBD28 /* CHShareKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHShareKit.h; path = CHShareKit/Classes/CHShareKit.h; sourceTree = "<group>"; };
+		3BDC9BB92414B926002FBD28 /* CHSKPlatformConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSKPlatformConfiguration.h; sourceTree = "<group>"; };
+		3BDC9BBA2414B926002FBD28 /* CHSKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHSKUser.m; sourceTree = "<group>"; };
+		3BDC9BBB2414B926002FBD28 /* CHSKShareMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHSKShareMessage.m; sourceTree = "<group>"; };
+		3BDC9BBC2414B926002FBD28 /* CHSKShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSKShare.h; sourceTree = "<group>"; };
+		3BDC9BBF2414B926002FBD28 /* CHSKPlatformBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHSKPlatformBridge.m; sourceTree = "<group>"; };
+		3BDC9BC02414B926002FBD28 /* CHSKImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSKImageDownloader.h; sourceTree = "<group>"; };
+		3BDC9BC12414B926002FBD28 /* CHSKMessageConvertHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHSKMessageConvertHelper.m; sourceTree = "<group>"; };
+		3BDC9BC22414B926002FBD28 /* CHSKShareBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSKShareBridge.h; sourceTree = "<group>"; };
+		3BDC9BC32414B926002FBD28 /* CHSKCheckHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHSKCheckHelper.m; sourceTree = "<group>"; };
+		3BDC9BC42414B926002FBD28 /* CHSKMessageConvertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSKMessageConvertHelper.h; sourceTree = "<group>"; };
+		3BDC9BC52414B926002FBD28 /* CHSKImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHSKImageDownloader.m; sourceTree = "<group>"; };
+		3BDC9BC62414B926002FBD28 /* CHSKPlatformBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSKPlatformBridge.h; sourceTree = "<group>"; };
+		3BDC9BC72414B926002FBD28 /* CHSKShareBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHSKShareBridge.m; sourceTree = "<group>"; };
+		3BDC9BC82414B926002FBD28 /* CHSKCheckHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSKCheckHelper.h; sourceTree = "<group>"; };
+		3BDC9BCA2414B926002FBD28 /* CHSKShareBridgeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSKShareBridgeProtocol.h; sourceTree = "<group>"; };
+		3BDC9BCC2414B926002FBD28 /* CHSKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSKDefines.h; sourceTree = "<group>"; };
+		3BDC9BCD2414B926002FBD28 /* CHSKPrivateDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSKPrivateDefines.h; sourceTree = "<group>"; };
+		3BDC9BCE2414B926002FBD28 /* CHSKDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHSKDefines.m; sourceTree = "<group>"; };
+		3BDC9BCF2414B926002FBD28 /* CHSKPrivateDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHSKPrivateDefines.m; sourceTree = "<group>"; };
+		3BDC9BD12414B926002FBD28 /* CHSKWXError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHSKWXError.m; sourceTree = "<group>"; };
+		3BDC9BD22414B926002FBD28 /* CHSKWXCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSKWXCredential.h; sourceTree = "<group>"; };
+		3BDC9BD32414B926002FBD28 /* CHSKWXError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSKWXError.h; sourceTree = "<group>"; };
+		3BDC9BD42414B926002FBD28 /* CHSKWXCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHSKWXCredential.m; sourceTree = "<group>"; };
+		3BDC9BD62414B926002FBD28 /* CHSKNetworking+JXSKWX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CHSKNetworking+JXSKWX.m"; sourceTree = "<group>"; };
+		3BDC9BD72414B926002FBD28 /* CHSKNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSKNetworking.h; sourceTree = "<group>"; };
+		3BDC9BD82414B926002FBD28 /* CHSKAPIDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHSKAPIDefines.m; sourceTree = "<group>"; };
+		3BDC9BD92414B926002FBD28 /* CHSKNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHSKNetworking.m; sourceTree = "<group>"; };
+		3BDC9BDA2414B926002FBD28 /* CHSKNetworking+JXSKWX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CHSKNetworking+JXSKWX.h"; sourceTree = "<group>"; };
+		3BDC9BDB2414B926002FBD28 /* CHSKAPIDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSKAPIDefines.h; sourceTree = "<group>"; };
+		3BDC9BDD2414B926002FBD28 /* NSError+CHShareKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+CHShareKit.m"; sourceTree = "<group>"; };
+		3BDC9BDE2414B926002FBD28 /* NSArray+CHShareKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CHShareKit.m"; sourceTree = "<group>"; };
+		3BDC9BDF2414B926002FBD28 /* NSString+CHShareKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CHShareKit.m"; sourceTree = "<group>"; };
+		3BDC9BE02414B926002FBD28 /* NSObject+CHShareKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CHShareKit.m"; sourceTree = "<group>"; };
+		3BDC9BE12414B926002FBD28 /* NSURL+CHShareKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+CHShareKit.m"; sourceTree = "<group>"; };
+		3BDC9BE22414B926002FBD28 /* NSString+CHShareKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CHShareKit.h"; sourceTree = "<group>"; };
+		3BDC9BE32414B926002FBD28 /* NSArray+CHShareKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CHShareKit.h"; sourceTree = "<group>"; };
+		3BDC9BE42414B926002FBD28 /* NSError+CHShareKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+CHShareKit.h"; sourceTree = "<group>"; };
+		3BDC9BE52414B926002FBD28 /* NSURL+CHShareKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+CHShareKit.h"; sourceTree = "<group>"; };
+		3BDC9BE62414B926002FBD28 /* NSObject+CHShareKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CHShareKit.h"; sourceTree = "<group>"; };
+		3BDC9BE72414B926002FBD28 /* CHSKCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSKCredential.h; sourceTree = "<group>"; };
+		3BDC9BE82414B926002FBD28 /* CHSKShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHSKShare.m; sourceTree = "<group>"; };
+		3BDC9BE92414B926002FBD28 /* CHSKShareMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSKShareMessage.h; sourceTree = "<group>"; };
+		3BDC9BEA2414B926002FBD28 /* CHSKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSKUser.h; sourceTree = "<group>"; };
+		3BDC9BEB2414B926002FBD28 /* CHSKPlatformConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHSKPlatformConfiguration.m; sourceTree = "<group>"; };
+		3BDC9BEC2414B926002FBD28 /* CHSKCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHSKCredential.m; sourceTree = "<group>"; };
 		4127B2C17C7CC0E024BDE3F758BFE9C3 /* Pods-CHShareKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CHShareKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		449C036F6792B05EF757A1A3EB721A80 /* Pods-CHShareKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CHShareKit_Tests-Info.plist"; sourceTree = "<group>"; };
 		494BBD9331E8E3D2B77BEFD032B9C083 /* Pods-CHShareKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CHShareKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5101FFEC6C0DF07F6B51573B460716C0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		54953DC2A6933352E801E105F1462B02 /* Pods_CHShareKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CHShareKit_Tests.framework; path = "Pods-CHShareKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5101FFEC6C0DF07F6B51573B460716C0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		54953DC2A6933352E801E105F1462B02 /* Pods_CHShareKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHShareKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		593CEF52B9429174682BF2D9FC383559 /* CHShareKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHShareKit-prefix.pch"; sourceTree = "<group>"; };
 		59CDC4CFD6391A1FF36609FB690EBA40 /* Pods-CHShareKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CHShareKit_Example-dummy.m"; sourceTree = "<group>"; };
 		5B80692B2BB98E141A295BA2D662CC70 /* Pods-CHShareKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CHShareKit_Tests.modulemap"; sourceTree = "<group>"; };
-		5BB74199DEB90B81B2AA7CAEA375C295 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		5EEFE0BA1092DAE345F5BE2B734109FA /* Pods_CHShareKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CHShareKit_Example.framework; path = "Pods-CHShareKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BB74199DEB90B81B2AA7CAEA375C295 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5EEFE0BA1092DAE345F5BE2B734109FA /* Pods_CHShareKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHShareKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6103AAB39FE5519C39462CCFD9FE5A89 /* CHShareKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CHShareKit.debug.xcconfig; sourceTree = "<group>"; };
 		6E1A010356BA3FAD131F2460A8207538 /* Pods-CHShareKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CHShareKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6E64F2358C9BF20A0E3C20382CF31F60 /* Pods-CHShareKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CHShareKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		722A9438699AD33F42024EB99F2C619F /* Pods-CHShareKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CHShareKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		78EF7D75E9A542578A95FD680FA5BA97 /* Pods-CHShareKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CHShareKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AF01E8AEADF8057E253AB01B42EEAA18 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = CHShareKit/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CC57A66D01C45C7ECED7E4FDF7245471 /* Pods-CHShareKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CHShareKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CD02F162CB3EA148CC6B66EC2AE6FE44 /* CHShareKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHShareKit-umbrella.h"; sourceTree = "<group>"; };
 		CEA7F72D38243099CFB1CC1F571E7515 /* Pods-CHShareKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CHShareKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -134,6 +224,115 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3BDC9BB82414B926002FBD28 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9BB92414B926002FBD28 /* CHSKPlatformConfiguration.h */,
+				3BDC9BBA2414B926002FBD28 /* CHSKUser.m */,
+				3BDC9BBB2414B926002FBD28 /* CHSKShareMessage.m */,
+				3BDC9BBC2414B926002FBD28 /* CHSKShare.h */,
+				3BDC9BBD2414B926002FBD28 /* General */,
+				3BDC9BE72414B926002FBD28 /* CHSKCredential.h */,
+				3BDC9BE82414B926002FBD28 /* CHSKShare.m */,
+				3BDC9BE92414B926002FBD28 /* CHSKShareMessage.h */,
+				3BDC9BEA2414B926002FBD28 /* CHSKUser.h */,
+				3BDC9BEB2414B926002FBD28 /* CHSKPlatformConfiguration.m */,
+				3BDC9BEC2414B926002FBD28 /* CHSKCredential.m */,
+			);
+			name = Core;
+			path = CHShareKit/Classes/Core;
+			sourceTree = "<group>";
+		};
+		3BDC9BBD2414B926002FBD28 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9BBE2414B926002FBD28 /* Tools */,
+				3BDC9BC92414B926002FBD28 /* Protocol */,
+				3BDC9BCB2414B926002FBD28 /* Defines */,
+				3BDC9BD02414B926002FBD28 /* Private */,
+				3BDC9BD52414B926002FBD28 /* API */,
+				3BDC9BDC2414B926002FBD28 /* Categories */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		3BDC9BBE2414B926002FBD28 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9BC62414B926002FBD28 /* CHSKPlatformBridge.h */,
+				3BDC9BBF2414B926002FBD28 /* CHSKPlatformBridge.m */,
+				3BDC9BC02414B926002FBD28 /* CHSKImageDownloader.h */,
+				3BDC9BC12414B926002FBD28 /* CHSKMessageConvertHelper.m */,
+				3BDC9BC32414B926002FBD28 /* CHSKCheckHelper.m */,
+				3BDC9BC42414B926002FBD28 /* CHSKMessageConvertHelper.h */,
+				3BDC9BC52414B926002FBD28 /* CHSKImageDownloader.m */,
+				3BDC9BC22414B926002FBD28 /* CHSKShareBridge.h */,
+				3BDC9BC72414B926002FBD28 /* CHSKShareBridge.m */,
+				3BDC9BC82414B926002FBD28 /* CHSKCheckHelper.h */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		3BDC9BC92414B926002FBD28 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9BCA2414B926002FBD28 /* CHSKShareBridgeProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		3BDC9BCB2414B926002FBD28 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9BCC2414B926002FBD28 /* CHSKDefines.h */,
+				3BDC9BCD2414B926002FBD28 /* CHSKPrivateDefines.h */,
+				3BDC9BCE2414B926002FBD28 /* CHSKDefines.m */,
+				3BDC9BCF2414B926002FBD28 /* CHSKPrivateDefines.m */,
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		3BDC9BD02414B926002FBD28 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9BD12414B926002FBD28 /* CHSKWXError.m */,
+				3BDC9BD22414B926002FBD28 /* CHSKWXCredential.h */,
+				3BDC9BD32414B926002FBD28 /* CHSKWXError.h */,
+				3BDC9BD42414B926002FBD28 /* CHSKWXCredential.m */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		3BDC9BD52414B926002FBD28 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9BD62414B926002FBD28 /* CHSKNetworking+JXSKWX.m */,
+				3BDC9BD72414B926002FBD28 /* CHSKNetworking.h */,
+				3BDC9BD82414B926002FBD28 /* CHSKAPIDefines.m */,
+				3BDC9BD92414B926002FBD28 /* CHSKNetworking.m */,
+				3BDC9BDA2414B926002FBD28 /* CHSKNetworking+JXSKWX.h */,
+				3BDC9BDB2414B926002FBD28 /* CHSKAPIDefines.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3BDC9BDC2414B926002FBD28 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9BDD2414B926002FBD28 /* NSError+CHShareKit.m */,
+				3BDC9BDE2414B926002FBD28 /* NSArray+CHShareKit.m */,
+				3BDC9BDF2414B926002FBD28 /* NSString+CHShareKit.m */,
+				3BDC9BE02414B926002FBD28 /* NSObject+CHShareKit.m */,
+				3BDC9BE12414B926002FBD28 /* NSURL+CHShareKit.m */,
+				3BDC9BE22414B926002FBD28 /* NSString+CHShareKit.h */,
+				3BDC9BE32414B926002FBD28 /* NSArray+CHShareKit.h */,
+				3BDC9BE42414B926002FBD28 /* NSError+CHShareKit.h */,
+				3BDC9BE52414B926002FBD28 /* NSURL+CHShareKit.h */,
+				3BDC9BE62414B926002FBD28 /* NSObject+CHShareKit.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		6F2DF2A8D49340BE96C25D4CF8C87164 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +373,8 @@
 		D3AC121C9561623F6386EE5CF86C118A /* CHShareKit */ = {
 			isa = PBXGroup;
 			children = (
-				AF01E8AEADF8057E253AB01B42EEAA18 /* ReplaceMe.m */,
+				3BDC9BB72414B926002FBD28 /* CHShareKit.h */,
+				3BDC9BB82414B926002FBD28 /* Core */,
 				6F2DF2A8D49340BE96C25D4CF8C87164 /* Pod */,
 				1EC664D83032202EE2557F059A22D64D /* Support Files */,
 			);
@@ -246,7 +446,31 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BDC9BEE2414B926002FBD28 /* CHSKPlatformConfiguration.h in Headers */,
+				3BDC9C032414B926002FBD28 /* CHSKWXError.h in Headers */,
+				3BDC9C022414B926002FBD28 /* CHSKWXCredential.h in Headers */,
+				3BDC9C182414B926002FBD28 /* CHSKUser.h in Headers */,
+				3BDC9BF12414B926002FBD28 /* CHSKShare.h in Headers */,
+				3BDC9C102414B926002FBD28 /* NSString+CHShareKit.h in Headers */,
+				3BDC9BFD2414B926002FBD28 /* CHSKDefines.h in Headers */,
+				3BDC9BF32414B926002FBD28 /* CHSKImageDownloader.h in Headers */,
+				3BDC9C0A2414B926002FBD28 /* CHSKAPIDefines.h in Headers */,
+				3BDC9BFE2414B926002FBD28 /* CHSKPrivateDefines.h in Headers */,
+				3BDC9C172414B926002FBD28 /* CHSKShareMessage.h in Headers */,
+				3BDC9BED2414B926002FBD28 /* CHShareKit.h in Headers */,
+				3BDC9C152414B926002FBD28 /* CHSKCredential.h in Headers */,
+				3BDC9C142414B926002FBD28 /* NSObject+CHShareKit.h in Headers */,
+				3BDC9C122414B926002FBD28 /* NSError+CHShareKit.h in Headers */,
+				3BDC9C092414B926002FBD28 /* CHSKNetworking+JXSKWX.h in Headers */,
+				3BDC9C132414B926002FBD28 /* NSURL+CHShareKit.h in Headers */,
+				3BDC9BF52414B926002FBD28 /* CHSKShareBridge.h in Headers */,
+				3BDC9BF92414B926002FBD28 /* CHSKPlatformBridge.h in Headers */,
 				01DA66D1F2BC2C92371ADB8D908DB821 /* CHShareKit-umbrella.h in Headers */,
+				3BDC9BF72414B926002FBD28 /* CHSKMessageConvertHelper.h in Headers */,
+				3BDC9BFC2414B926002FBD28 /* CHSKShareBridgeProtocol.h in Headers */,
+				3BDC9C062414B926002FBD28 /* CHSKNetworking.h in Headers */,
+				3BDC9C112414B926002FBD28 /* NSArray+CHShareKit.h in Headers */,
+				3BDC9BFB2414B926002FBD28 /* CHSKCheckHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,8 +591,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BDC9C072414B926002FBD28 /* CHSKAPIDefines.m in Sources */,
+				3BDC9C042414B926002FBD28 /* CHSKWXCredential.m in Sources */,
 				58F1FAFA7C366216ADE09BA75D1A4AAB /* CHShareKit-dummy.m in Sources */,
-				5945E291EBB2AC71FA38034BEBA06CC2 /* ReplaceMe.m in Sources */,
+				3BDC9C0C2414B926002FBD28 /* NSArray+CHShareKit.m in Sources */,
+				3BDC9C052414B926002FBD28 /* CHSKNetworking+JXSKWX.m in Sources */,
+				3BDC9BF02414B926002FBD28 /* CHSKShareMessage.m in Sources */,
+				3BDC9BF22414B926002FBD28 /* CHSKPlatformBridge.m in Sources */,
+				3BDC9C0E2414B926002FBD28 /* NSObject+CHShareKit.m in Sources */,
+				3BDC9C002414B926002FBD28 /* CHSKPrivateDefines.m in Sources */,
+				3BDC9BF42414B926002FBD28 /* CHSKMessageConvertHelper.m in Sources */,
+				3BDC9C0F2414B926002FBD28 /* NSURL+CHShareKit.m in Sources */,
+				3BDC9C082414B926002FBD28 /* CHSKNetworking.m in Sources */,
+				3BDC9C012414B926002FBD28 /* CHSKWXError.m in Sources */,
+				3BDC9BFF2414B926002FBD28 /* CHSKDefines.m in Sources */,
+				3BDC9C1A2414B926002FBD28 /* CHSKCredential.m in Sources */,
+				3BDC9C0B2414B926002FBD28 /* NSError+CHShareKit.m in Sources */,
+				3BDC9C162414B926002FBD28 /* CHSKShare.m in Sources */,
+				3BDC9C0D2414B926002FBD28 /* NSString+CHShareKit.m in Sources */,
+				3BDC9BEF2414B926002FBD28 /* CHSKUser.m in Sources */,
+				3BDC9C192414B926002FBD28 /* CHSKPlatformConfiguration.m in Sources */,
+				3BDC9BFA2414B926002FBD28 /* CHSKShareBridge.m in Sources */,
+				3BDC9BF82414B926002FBD28 /* CHSKImageDownloader.m in Sources */,
+				3BDC9BF62414B926002FBD28 /* CHSKCheckHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,8 +771,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
