@@ -28,4 +28,13 @@ Pod::Spec.new do |s|
       core.dependency 'SDWebImage'
       core.dependency 'YYModel'
   end
+  
+  # QQBridge
+  
+  # WXBridge
+  s.subspec 'WXBridge' do |wxbridge|
+      wxbridge.source_files = 'CHShareKit/Classes/WXBridge/**/*.{h,m}'
+      wxbridge.dependency 'WechatOpenSDK'
+  end
+  
 end

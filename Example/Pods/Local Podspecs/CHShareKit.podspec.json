@@ -27,7 +27,7 @@
   "subspecs": [
     {
       "name": "Core",
-      "source_files": "CHShareKit/Classes/Core/*.{h,m}",
+      "source_files": "CHShareKit/Classes/Core/**/*.{h,m}",
       "dependencies": {
         "AFNetworking": [
 
