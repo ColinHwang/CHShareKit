@@ -7,7 +7,7 @@
 
 #import "CHSKNetworking.h"
 
-#import <CHAFNetworking/AFNetworking.h>
+#import <AFNetworking/AFNetworking.h>
 #import "CHSKAPIDefines.h"
 
 @interface CHSKNetworking ()

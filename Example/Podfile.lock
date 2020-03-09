@@ -1,15 +1,418 @@
 PODS:
-  - CHShareKit (0.1.0)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - CHCategories (0.1.0):
+    - CHCategories/CoreGraphic (= 0.1.0)
+    - CHCategories/Foundation (= 0.1.0)
+    - CHCategories/Macro (= 0.1.0)
+    - CHCategories/QuartzCore (= 0.1.0)
+    - CHCategories/UIKit (= 0.1.0)
+  - CHCategories/CoreGraphic (0.1.0)
+  - CHCategories/Foundation (0.1.0):
+    - CHCategories/Foundation/NSArray (= 0.1.0)
+    - CHCategories/Foundation/NSAttributedString (= 0.1.0)
+    - CHCategories/Foundation/NSCalendar (= 0.1.0)
+    - CHCategories/Foundation/NSCharacterSet (= 0.1.0)
+    - CHCategories/Foundation/NSData (= 0.1.0)
+    - CHCategories/Foundation/NSDate (= 0.1.0)
+    - CHCategories/Foundation/NSDecimalNumber (= 0.1.0)
+    - CHCategories/Foundation/NSDictionary (= 0.1.0)
+    - CHCategories/Foundation/NSException (= 0.1.0)
+    - CHCategories/Foundation/NSFileManager (= 0.1.0)
+    - CHCategories/Foundation/NSIndexPath (= 0.1.0)
+    - CHCategories/Foundation/NSJSONSerialization (= 0.1.0)
+    - CHCategories/Foundation/NSKeyedArchiver (= 0.1.0)
+    - CHCategories/Foundation/NSNotificationCenter (= 0.1.0)
+    - CHCategories/Foundation/NSNumber (= 0.1.0)
+    - CHCategories/Foundation/NSObject (= 0.1.0)
+    - CHCategories/Foundation/NSParagraphStyle (= 0.1.0)
+    - CHCategories/Foundation/NSPointerArray (= 0.1.0)
+    - CHCategories/Foundation/NSString (= 0.1.0)
+    - CHCategories/Foundation/NSTimer (= 0.1.0)
+    - CHCategories/Foundation/NSURL (= 0.1.0)
+    - CHCategories/Foundation/NSURLComponents (= 0.1.0)
+    - CHCategories/Foundation/NSUserDefaults (= 0.1.0)
+    - CHCategories/Foundation/NSValue (= 0.1.0)
+  - CHCategories/Foundation/NSArray (0.1.0):
+    - "CHCategories/Foundation/NSArray/NSArray+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSArray/NSArray+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSData/NSData+CHBase"
+    - "CHCategories/Foundation/NSValue/NSValue+CHBase"
+  - CHCategories/Foundation/NSAttributedString (0.1.0):
+    - "CHCategories/Foundation/NSAttributedString/NSAttributedString+CHBase (= 0.1.0)"
+    - "CHCategories/Foundation/NSAttributedString/NSAttributedString+CHCreation (= 0.1.0)"
+    - "CHCategories/Foundation/NSAttributedString/NSAttributedString+CHParagraphStyleAttributes (= 0.1.0)"
+  - "CHCategories/Foundation/NSAttributedString/NSAttributedString+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSString/NSString+CHBase"
+    - "CHCategories/Foundation/NSValue/NSValue+CHBase"
+  - "CHCategories/Foundation/NSAttributedString/NSAttributedString+CHCreation (0.1.0)":
+    - "CHCategories/Foundation/NSAttributedString/NSAttributedString+CHBase"
+    - "CHCategories/Foundation/NSData/NSData+CHBase"
+    - "CHCategories/Foundation/NSString/NSString+CHBase"
+    - "CHCategories/Foundation/NSValue/NSValue+CHBase"
+  - "CHCategories/Foundation/NSAttributedString/NSAttributedString+CHParagraphStyleAttributes (0.1.0)":
+    - "CHCategories/Foundation/NSAttributedString/NSAttributedString+CHBase"
+  - CHCategories/Foundation/NSCalendar (0.1.0):
+    - "CHCategories/Foundation/NSCalendar/NSCalendar+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSCalendar/NSCalendar+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+  - CHCategories/Foundation/NSCharacterSet (0.1.0):
+    - "CHCategories/Foundation/NSCharacterSet/NSCharacterSet+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSCharacterSet/NSCharacterSet+CHBase (0.1.0)"
+  - CHCategories/Foundation/NSData (0.1.0):
+    - "CHCategories/Foundation/NSData/NSData+CHBase (= 0.1.0)"
+    - "CHCategories/Foundation/NSData/NSData+CHCrypto (= 0.1.0)"
+  - "CHCategories/Foundation/NSData/NSData+CHBase (0.1.0)"
+  - "CHCategories/Foundation/NSData/NSData+CHCrypto (0.1.0)"
+  - CHCategories/Foundation/NSDate (0.1.0):
+    - "CHCategories/Foundation/NSDate/NSDate+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSDate/NSDate+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSArray/NSArray+CHBase"
+  - CHCategories/Foundation/NSDecimalNumber (0.1.0):
+    - "CHCategories/Foundation/NSDecimalNumber/NSDecimalNumber+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSDecimalNumber/NSDecimalNumber+CHBase (0.1.0)"
+  - CHCategories/Foundation/NSDictionary (0.1.0):
+    - "CHCategories/Foundation/NSDictionary/NSDictionary+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSDictionary/NSDictionary+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSData/NSData+CHBase"
+    - "CHCategories/Foundation/NSNumber/NSNumber+CHBase"
+  - CHCategories/Foundation/NSException (0.1.0):
+    - "CHCategories/Foundation/NSException/NSException+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSException/NSException+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+    - "CHCategories/Foundation/NSValue/NSValue+CHBase"
+  - CHCategories/Foundation/NSFileManager (0.1.0):
+    - "CHCategories/Foundation/NSFileManager/NSFileManager+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSFileManager/NSFileManager+CHBase (0.1.0)"
+  - CHCategories/Foundation/NSIndexPath (0.1.0):
+    - "CHCategories/Foundation/NSIndexPath/NSIndexPath+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSIndexPath/NSIndexPath+CHBase (0.1.0)"
+  - CHCategories/Foundation/NSJSONSerialization (0.1.0):
+    - "CHCategories/Foundation/NSJSONSerialization/NSJSONSerialization+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSJSONSerialization/NSJSONSerialization+CHBase (0.1.0)"
+  - CHCategories/Foundation/NSKeyedArchiver (0.1.0):
+    - "CHCategories/Foundation/NSKeyedArchiver/NSKeyedArchiver+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSKeyedArchiver/NSKeyedArchiver+CHBase (0.1.0)"
+  - CHCategories/Foundation/NSNotificationCenter (0.1.0):
+    - "CHCategories/Foundation/NSNotificationCenter/NSNotificationCenter+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSNotificationCenter/NSNotificationCenter+CHBase (0.1.0)"
+  - CHCategories/Foundation/NSNumber (0.1.0):
+    - "CHCategories/Foundation/NSNumber/NSNumber+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSNumber/NSNumber+CHBase (0.1.0)"
+  - CHCategories/Foundation/NSObject (0.1.0):
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase (= 0.1.0)"
+    - "CHCategories/Foundation/NSObject/NSObject+CHDataBind (= 0.1.0)"
+    - "CHCategories/Foundation/NSObject/NSObject+CHKeyValueCoding (= 0.1.0)"
+    - "CHCategories/Foundation/NSObject/NSObject+CHKeyValueObserving (= 0.1.0)"
+    - "CHCategories/Foundation/NSObject/NSObject+CHMultipleDelegates (= 0.1.0)"
+  - "CHCategories/Foundation/NSObject/NSObject+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSValue/NSValue+CHBase"
+  - "CHCategories/Foundation/NSObject/NSObject+CHDataBind (0.1.0)":
+    - "CHCategories/Foundation/NSNumber/NSNumber+CHBase"
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+  - "CHCategories/Foundation/NSObject/NSObject+CHKeyValueCoding (0.1.0)":
+    - "CHCategories/Foundation/NSNumber/NSNumber+CHBase"
+  - "CHCategories/Foundation/NSObject/NSObject+CHKeyValueObserving (0.1.0)":
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+  - "CHCategories/Foundation/NSObject/NSObject+CHMultipleDelegates (0.1.0)":
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+    - "CHCategories/Foundation/NSPointerArray/NSPointerArray+CHBase"
+  - CHCategories/Foundation/NSParagraphStyle (0.1.0):
+    - "CHCategories/Foundation/NSParagraphStyle/NSParagraphStyle+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSParagraphStyle/NSParagraphStyle+CHBase (0.1.0)"
+  - CHCategories/Foundation/NSPointerArray (0.1.0):
+    - "CHCategories/Foundation/NSPointerArray/NSPointerArray+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSPointerArray/NSPointerArray+CHBase (0.1.0)"
+  - CHCategories/Foundation/NSString (0.1.0):
+    - "CHCategories/Foundation/NSString/NSString+CHBase (= 0.1.0)"
+    - "CHCategories/Foundation/NSString/NSString+CHCheck (= 0.1.0)"
+    - "CHCategories/Foundation/NSString/NSString+CHChinese (= 0.1.0)"
+    - "CHCategories/Foundation/NSString/NSString+CHCrypto (= 0.1.0)"
+    - "CHCategories/Foundation/NSString/NSString+CHDrawing (= 0.1.0)"
+    - "CHCategories/Foundation/NSString/NSString+CHEmoji (= 0.1.0)"
+    - "CHCategories/Foundation/NSString/NSString+CHRegularExpression (= 0.1.0)"
+    - "CHCategories/Foundation/NSString/NSString+CHRoundNumberString (= 0.1.0)"
+    - "CHCategories/Foundation/NSString/NSString+CHTrimming (= 0.1.0)"
+  - "CHCategories/Foundation/NSString/NSString+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSCharacterSet/NSCharacterSet+CHBase"
+    - "CHCategories/Foundation/NSData/NSData+CHBase"
+    - "CHCategories/Foundation/NSDecimalNumber/NSDecimalNumber+CHBase"
+    - "CHCategories/Foundation/NSNumber/NSNumber+CHBase"
+  - "CHCategories/Foundation/NSString/NSString+CHCheck (0.1.0)":
+    - "CHCategories/Foundation/NSDictionary/NSDictionary+CHBase"
+    - "CHCategories/Foundation/NSString/NSString+CHBase"
+    - "CHCategories/Foundation/NSString/NSString+CHRegularExpression"
+  - "CHCategories/Foundation/NSString/NSString+CHChinese (0.1.0)":
+    - "CHCategories/Foundation/NSString/NSString+CHRegularExpression"
+  - "CHCategories/Foundation/NSString/NSString+CHCrypto (0.1.0)":
+    - "CHCategories/Foundation/NSData/NSData+CHCrypto"
+  - "CHCategories/Foundation/NSString/NSString+CHDrawing (0.1.0)"
+  - "CHCategories/Foundation/NSString/NSString+CHEmoji (0.1.0)":
+    - "CHCategories/Foundation/NSString/NSString+CHBase"
+    - "CHCategories/Foundation/NSString/NSString+CHRegularExpression"
+  - "CHCategories/Foundation/NSString/NSString+CHRegularExpression (0.1.0)"
+  - "CHCategories/Foundation/NSString/NSString+CHRoundNumberString (0.1.0)":
+    - "CHCategories/Foundation/NSDecimalNumber/NSDecimalNumber+CHBase"
+  - "CHCategories/Foundation/NSString/NSString+CHTrimming (0.1.0)":
+    - "CHCategories/Foundation/NSString/NSString+CHBase"
+    - "CHCategories/Foundation/NSString/NSString+CHRegularExpression"
+  - CHCategories/Foundation/NSTimer (0.1.0):
+    - "CHCategories/Foundation/NSTimer/NSTimer+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSTimer/NSTimer+CHBase (0.1.0)"
+  - CHCategories/Foundation/NSURL (0.1.0):
+    - "CHCategories/Foundation/NSURL/NSURL+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSURL/NSURL+CHBase (0.1.0)"
+  - CHCategories/Foundation/NSURLComponents (0.1.0):
+    - "CHCategories/Foundation/NSURLComponents/NSURLComponents+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSURLComponents/NSURLComponents+CHBase (0.1.0)"
+  - CHCategories/Foundation/NSUserDefaults (0.1.0):
+    - CHCategories/Foundation/NSUserDefaults/NSUserDefaultsCHBase (= 0.1.0)
+  - CHCategories/Foundation/NSUserDefaults/NSUserDefaultsCHBase (0.1.0):
+    - "CHCategories/Foundation/NSDictionary/NSDictionary+CHBase"
+  - CHCategories/Foundation/NSValue (0.1.0):
+    - "CHCategories/Foundation/NSValue/NSValue+CHBase (= 0.1.0)"
+  - "CHCategories/Foundation/NSValue/NSValue+CHBase (0.1.0)"
+  - CHCategories/Macro (0.1.0)
+  - CHCategories/QuartzCore (0.1.0):
+    - CHCategories/QuartzCore/CALayer (= 0.1.0)
+  - CHCategories/QuartzCore/CALayer (0.1.0):
+    - "CHCategories/QuartzCore/CALayer/CALayer+CHAnimation (= 0.1.0)"
+    - "CHCategories/QuartzCore/CALayer/CALayer+CHBase (= 0.1.0)"
+  - "CHCategories/QuartzCore/CALayer/CALayer+CHAnimation (0.1.0)"
+  - "CHCategories/QuartzCore/CALayer/CALayer+CHBase (0.1.0)":
+    - CHCategories/CoreGraphic
+  - CHCategories/UIKit (0.1.0):
+    - CHCategories/UIKit/UIActivityIndicatorView (= 0.1.0)
+    - CHCategories/UIKit/UIAlertController (= 0.1.0)
+    - CHCategories/UIKit/UIApplication (= 0.1.0)
+    - CHCategories/UIKit/UIBarButtonItem (= 0.1.0)
+    - CHCategories/UIKit/UIBarItem (= 0.1.0)
+    - CHCategories/UIKit/UIBezierPath (= 0.1.0)
+    - CHCategories/UIKit/UIButton (= 0.1.0)
+    - CHCategories/UIKit/UICollectionView (= 0.1.0)
+    - CHCategories/UIKit/UICollectionViewFlowLayout (= 0.1.0)
+    - CHCategories/UIKit/UIColor (= 0.1.0)
+    - CHCategories/UIKit/UIControl (= 0.1.0)
+    - CHCategories/UIKit/UIDevice (= 0.1.0)
+    - CHCategories/UIKit/UIFont (= 0.1.0)
+    - CHCategories/UIKit/UIGestureRecognizer (= 0.1.0)
+    - CHCategories/UIKit/UIImage (= 0.1.0)
+    - CHCategories/UIKit/UIImageView (= 0.1.0)
+    - CHCategories/UIKit/UINavigationBar (= 0.1.0)
+    - CHCategories/UIKit/UINavigationController (= 0.1.0)
+    - CHCategories/UIKit/UIScreen (= 0.1.0)
+    - CHCategories/UIKit/UIScrollView (= 0.1.0)
+    - CHCategories/UIKit/UISlider (= 0.1.0)
+    - CHCategories/UIKit/UISwipeGestureRecognizer (= 0.1.0)
+    - CHCategories/UIKit/UITabBar (= 0.1.0)
+    - CHCategories/UIKit/UITabBarItem (= 0.1.0)
+    - CHCategories/UIKit/UITableView (= 0.1.0)
+    - CHCategories/UIKit/UITableViewCell (= 0.1.0)
+    - CHCategories/UIKit/UITextField (= 0.1.0)
+    - CHCategories/UIKit/UIView (= 0.1.0)
+    - CHCategories/UIKit/UIViewController (= 0.1.0)
+  - CHCategories/UIKit/UIActivityIndicatorView (0.1.0):
+    - "CHCategories/UIKit/UIActivityIndicatorView/UIActivityIndicatorView+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UIActivityIndicatorView/UIActivityIndicatorView+CHBase (0.1.0)"
+  - CHCategories/UIKit/UIAlertController (0.1.0):
+    - "CHCategories/UIKit/UIAlertController/UIAlertController+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UIAlertController/UIAlertController+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSAttributedString/NSAttributedString+CHBase"
+    - "CHCategories/UIKit/UIDevice/UIDevice+CHMachineInfo"
+  - CHCategories/UIKit/UIApplication (0.1.0):
+    - "CHCategories/UIKit/UIApplication/UIApplication+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UIApplication/UIApplication+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSArray/NSArray+CHBase"
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+    - "CHCategories/Foundation/NSString/NSString+CHBase"
+    - "CHCategories/UIKit/UIDevice/UIDevice+CHMachineInfo"
+    - "CHCategories/UIKit/UIScreen/UIScreen+CHBase"
+  - CHCategories/UIKit/UIBarButtonItem (0.1.0):
+    - "CHCategories/UIKit/UIBarButtonItem/UIBarButtonItem+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UIBarButtonItem/UIBarButtonItem+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+    - "CHCategories/UIKit/UIControl/UIControl+CHBase"
+    - "CHCategories/UIKit/UIGestureRecognizer/UIGestureRecognizer+CHBase"
+    - "CHCategories/UIKit/UIView/UIView+CHBase"
+  - CHCategories/UIKit/UIBarItem (0.1.0):
+    - "CHCategories/UIKit/UIBarItem/UIBarItem+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UIBarItem/UIBarItem+CHBase (0.1.0)"
+  - CHCategories/UIKit/UIBezierPath (0.1.0):
+    - "CHCategories/UIKit/UIBezierPath/UIBezierPath+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UIBezierPath/UIBezierPath+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSArray/NSArray+CHBase"
+  - CHCategories/UIKit/UIButton (0.1.0):
+    - "CHCategories/UIKit/UIButton/UIButton+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UIButton/UIButton+CHBase (0.1.0)":
+    - "CHCategories/UIKit/UIView/UIView+CHBase"
+  - CHCategories/UIKit/UICollectionView (0.1.0):
+    - "CHCategories/UIKit/UICollectionView/UICollectionView+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UICollectionView/UICollectionView+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSArray/NSArray+CHBase"
+    - "CHCategories/Foundation/NSIndexPath/NSIndexPath+CHBase"
+  - CHCategories/UIKit/UICollectionViewFlowLayout (0.1.0):
+    - "CHCategories/UIKit/UICollectionViewFlowLayout/UICollectionViewFlowLayout+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UICollectionViewFlowLayout/UICollectionViewFlowLayout+CHBase (0.1.0)"
+  - CHCategories/UIKit/UIColor (0.1.0):
+    - "CHCategories/UIKit/UIColor/UIColor+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UIColor/UIColor+CHBase (0.1.0)"
+  - CHCategories/UIKit/UIControl (0.1.0):
+    - "CHCategories/UIKit/UIControl/UIControl+CHBase (= 0.1.0)"
+    - "CHCategories/UIKit/UIControl/UIControl+CHRepeatClickPrevention (= 0.1.0)"
+  - "CHCategories/UIKit/UIControl/UIControl+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+  - "CHCategories/UIKit/UIControl/UIControl+CHRepeatClickPrevention (0.1.0)":
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+    - "CHCategories/Foundation/NSValue/NSValue+CHBase"
+  - CHCategories/UIKit/UIDevice (0.1.0):
+    - "CHCategories/UIKit/UIDevice/UIDevice+CHBase (= 0.1.0)"
+    - "CHCategories/UIKit/UIDevice/UIDevice+CHMachineInfo (= 0.1.0)"
+  - "CHCategories/UIKit/UIDevice/UIDevice+CHBase (0.1.0)"
+  - "CHCategories/UIKit/UIDevice/UIDevice+CHMachineInfo (0.1.0)":
+    - CHCategories/CoreGraphic
+    - "CHCategories/Foundation/NSString/NSString+CHBase"
+    - "CHCategories/UIKit/UIDevice/UIDevice+CHBase"
+    - "CHCategories/UIKit/UIScreen/UIScreen+CHBase"
+  - CHCategories/UIKit/UIFont (0.1.0):
+    - "CHCategories/UIKit/UIFont/UIFont+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UIFont/UIFont+CHBase (0.1.0)":
+    - "CHCategories/UIKit/UIDevice/UIDevice+CHMachineInfo"
+  - CHCategories/UIKit/UIGestureRecognizer (0.1.0):
+    - "CHCategories/UIKit/UIGestureRecognizer/UIGestureRecognizer+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UIGestureRecognizer/UIGestureRecognizer+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+  - CHCategories/UIKit/UIImage (0.1.0):
+    - "CHCategories/UIKit/UIImage/UIImage+CHBase (= 0.1.0)"
+    - "CHCategories/UIKit/UIImage/UIImage+CHGIFImage (= 0.1.0)"
+    - "CHCategories/UIKit/UIImage/UIImage+CHImageCompression (= 0.1.0)"
+    - "CHCategories/UIKit/UIImage/UIImage+CHImageEffect (= 0.1.0)"
+  - "CHCategories/UIKit/UIImage/UIImage+CHBase (0.1.0)":
+    - CHCategories/CoreGraphic
+    - "CHCategories/Foundation/NSString/NSString+CHEmoji"
+  - "CHCategories/UIKit/UIImage/UIImage+CHGIFImage (0.1.0)"
+  - "CHCategories/UIKit/UIImage/UIImage+CHImageCompression (0.1.0)":
+    - "CHCategories/UIKit/UIImage/UIImage+CHBase"
+  - "CHCategories/UIKit/UIImage/UIImage+CHImageEffect (0.1.0)":
+    - CHCategories/CoreGraphic
+    - "CHCategories/UIKit/UIImage/UIImage+CHBase"
+  - CHCategories/UIKit/UIImageView (0.1.0):
+    - "CHCategories/UIKit/UIImageView/UIImageView+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UIImageView/UIImageView+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+    - "CHCategories/Foundation/NSValue/NSValue+CHBase"
+  - CHCategories/UIKit/UINavigationBar (0.1.0):
+    - "CHCategories/UIKit/UINavigationBar/UINavigationBar+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UINavigationBar/UINavigationBar+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+    - "CHCategories/Foundation/NSValue/NSValue+CHBase"
+  - CHCategories/UIKit/UINavigationController (0.1.0):
+    - "CHCategories/UIKit/UINavigationController/UINavigationController+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UINavigationController/UINavigationController+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+    - "CHCategories/Foundation/NSValue/NSValue+CHBase"
+    - "CHCategories/UIKit/UIViewController/UIViewController+CHBase"
+  - CHCategories/UIKit/UIScreen (0.1.0):
+    - "CHCategories/UIKit/UIScreen/UIScreen+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UIScreen/UIScreen+CHBase (0.1.0)":
+    - "CHCategories/UIKit/UIDevice/UIDevice+CHBase"
+  - CHCategories/UIKit/UIScrollView (0.1.0):
+    - "CHCategories/UIKit/UIScrollView/UIScrollView+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UIScrollView/UIScrollView+CHBase (0.1.0)":
+    - CHCategories/CoreGraphic
+  - CHCategories/UIKit/UISlider (0.1.0):
+    - "CHCategories/UIKit/UISlider/UISlider+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UISlider/UISlider+CHBase (0.1.0)"
+  - CHCategories/UIKit/UISwipeGestureRecognizer (0.1.0):
+    - "CHCategories/UIKit/UISwipeGestureRecognizer/UISwipeGestureRecognizer+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UISwipeGestureRecognizer/UISwipeGestureRecognizer+CHBase (0.1.0)":
+    - "CHCategories/UIKit/UIGestureRecognizer/UIGestureRecognizer+CHBase"
+  - CHCategories/UIKit/UITabBar (0.1.0):
+    - "CHCategories/UIKit/UITabBar/UITabBar+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UITabBar/UITabBar+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+    - "CHCategories/Foundation/NSValue/NSValue+CHBase"
+  - CHCategories/UIKit/UITabBarItem (0.1.0):
+    - "CHCategories/UIKit/UITabBarItem/UITabBarItem+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UITabBarItem/UITabBarItem+CHBase (0.1.0)":
+    - "CHCategories/UIKit/UIBarItem/UIBarItem+CHBase"
+    - "CHCategories/UIKit/UIDevice/UIDevice+CHMachineInfo"
+  - CHCategories/UIKit/UITableView (0.1.0):
+    - "CHCategories/UIKit/UITableView/UITableView+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UITableView/UITableView+CHBase (0.1.0)":
+    - CHCategories/CoreGraphic
+    - "CHCategories/Foundation/NSArray/NSArray+CHBase"
+    - "CHCategories/Foundation/NSIndexPath/NSIndexPath+CHBase"
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+    - "CHCategories/Foundation/NSValue/NSValue+CHBase"
+    - "CHCategories/UIKit/UIScrollView/UIScrollView+CHBase"
+    - "CHCategories/UIKit/UIView/UIView+CHBase"
+  - CHCategories/UIKit/UITableViewCell (0.1.0):
+    - "CHCategories/UIKit/UITableViewCell/UITableViewCell+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UITableViewCell/UITableViewCell+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+  - CHCategories/UIKit/UITextField (0.1.0):
+    - "CHCategories/UIKit/UITextField/UITextField+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UITextField/UITextField+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+  - CHCategories/UIKit/UIView (0.1.0):
+    - "CHCategories/UIKit/UIView/UIView+CHAnimation (= 0.1.0)"
+    - "CHCategories/UIKit/UIView/UIView+CHBase (= 0.1.0)"
+    - "CHCategories/UIKit/UIView/UIView+CHTouchInset (= 0.1.0)"
+  - "CHCategories/UIKit/UIView/UIView+CHAnimation (0.1.0)"
+  - "CHCategories/UIKit/UIView/UIView+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSArray/NSArray+CHBase"
+    - "CHCategories/UIKit/UIGestureRecognizer/UIGestureRecognizer+CHBase"
+  - "CHCategories/UIKit/UIView/UIView+CHTouchInset (0.1.0)":
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+    - "CHCategories/Foundation/NSValue/NSValue+CHBase"
+  - CHCategories/UIKit/UIViewController (0.1.0):
+    - "CHCategories/UIKit/UIViewController/UIViewController+CHBase (= 0.1.0)"
+  - "CHCategories/UIKit/UIViewController/UIViewController+CHBase (0.1.0)":
+    - "CHCategories/Foundation/NSObject/NSObject+CHBase"
+    - "CHCategories/Foundation/NSValue/NSValue+CHBase"
+  - CHShareKit (0.0.1):
+    - AFNetworking
+    - CHCategories
+    - SDWebImage
+    - YYModel
+  - SDWebImage (5.6.0):
+    - SDWebImage/Core (= 5.6.0)
+  - SDWebImage/Core (5.6.0)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - CHShareKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - CHCategories
+    - SDWebImage
+    - YYModel
 
 EXTERNAL SOURCES:
   CHShareKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CHShareKit: 97b58f3e596d31ffe243ce6de2b72817ff335b17
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CHCategories: 7c4507d75f150111c507f8648a6e162a2af71be6
+  CHShareKit: 8657d42d6543f688799aed45e1e4be92661c0d4b
+  SDWebImage: 21b19f56b4226cdfe3aefe4e6848dc43ed129a86
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: e5a57fe487c35de70e44c7e8466f94653c8c9d16
 
