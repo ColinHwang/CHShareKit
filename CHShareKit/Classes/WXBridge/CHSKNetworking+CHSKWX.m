@@ -9,6 +9,7 @@
 
 #import "CHSKWXError.h"
 
+#import <CHCategories/CHCategories.h>
 #import "CHSKPrivateDefines.h"
 #import "CHSKWXAPIDefines.h"
 #import "NSError+CHShareKit.h"
@@ -24,10 +25,10 @@
     NSString *URLString = [CH_SK_WX_BASE_HOST stringByAppendingPathComponent:CH_SK_WX_API_ACCESS_TOKEN];
     
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"appid"] = CH_SK_STR_AVOID_NIL(appId);
-    params[@"secret"] = CH_SK_STR_AVOID_NIL(appSecret);
-    params[@"code"] = CH_SK_STR_AVOID_NIL(code);
-    params[@"grant_type"] = CH_SK_STR_AVOID_NIL(@"authorization_code");
+    params[@"appid"] = CH_STRING_AVOID_NIL(appId);
+    params[@"secret"] = CH_STRING_AVOID_NIL(appSecret);
+    params[@"code"] = CH_STRING_AVOID_NIL(code);
+    params[@"grant_type"] = CH_STRING_AVOID_NIL(@"authorization_code");
     
     [CHSKNetworking GET:URLString parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull data) {
         CHSKWXError *wxError = [CHSKWXError yy_modelWithJSON:data];
@@ -50,8 +51,8 @@
     NSString *URLString = [CH_SK_WX_BASE_HOST stringByAppendingPathComponent:CH_SK_WX_API_USER_INFO];
     
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"access_token"] = CH_SK_STR_AVOID_NIL(accessToken);
-    params[@"openid"] = CH_SK_STR_AVOID_NIL(openId);
+    params[@"access_token"] = CH_STRING_AVOID_NIL(accessToken);
+    params[@"openid"] = CH_STRING_AVOID_NIL(openId);
     
     [CHSKNetworking GET:URLString parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull data) {
         CHSKWXError *wxError = [CHSKWXError yy_modelWithJSON:data];

@@ -54,7 +54,6 @@
 		08F5E2F3990B5D52F26B5426C42B1A06 /* NSValue+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA1B6BF7408FC90BAA33455C6293DA6 /* NSValue+CHBase.m */; };
 		09985809619183AD28D78E1BA316E04F /* UISwipeGestureRecognizer+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = B4EB9237BCFA3E0036AB637EC14D7076 /* UISwipeGestureRecognizer+CHBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		09F96FA4ECE23CEA6F2CEDE5CDE195FF /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E679A67A9D0AC500ACF7B14A7774F648 /* SDImageCache.m */; };
-		0B36E6533BE98A9432CB2C4CD34CF8E8 /* NSURL+CHShareKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A998C577AF75CC63455594E9CD0AFFB1 /* NSURL+CHShareKit.m */; };
 		0C26E8CE5202114A92A9CFFBA1A9CE88 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DB06E3812E29E204C68CC5BA354F0C22 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0C86765C39293B3AD303713ECF603269 /* NSButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 652A13902A442476DE2266637845B413 /* NSButton+WebCache.m */; };
 		0CBCF87B65593B96BC5B982C9A60F63A /* UIView+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1915178457FB2B1ED77F8B95E49D1724 /* UIView+CHBase.m */; };
@@ -108,7 +107,6 @@
 		2916B31097851134B07986883D34B835 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ED8215319C330A334F2322B2E866896 /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2B5428D5F3B8571A64E530DA59DD6C35 /* NSFileManager+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = E703B88EBEE49E2605FDCC84C8103C84 /* NSFileManager+CHBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2C95C61175E1EB929A4B094581747835 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 256104C1D66910BC58B1318C26481180 /* AFURLResponseSerialization.m */; };
-		2CA2F057D43D78B85547456537ACB30A /* NSArray+CHShareKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECDD18ECEE9C10E5B4377AFC824049B /* NSArray+CHShareKit.m */; };
 		2CB23A275034D73F3AF14F69E0C9DACD /* UIImage+ForceDecode.h in Headers */ = {isa = PBXBuildFile; fileRef = 867CBA916DCBF7B18A77CA7BD4BCF93C /* UIImage+ForceDecode.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2D6FD85654B8A88ADE6CE769AD1D799D /* CHShareKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E57D7D644D73EE04F8FAD0358393D3D /* CHShareKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2DD8F89ACA83E023030E4703D6440330 /* NSString+CHEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9ABE8B4730666EE6E698BB1B8DD9E /* NSString+CHEmoji.m */; };
@@ -137,6 +135,12 @@
 		3B5C5B152416585E005C93EE /* CHSKNetworking+CHSKWX.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5C5B132416585E005C93EE /* CHSKNetworking+CHSKWX.m */; };
 		3B5C5B182416590A005C93EE /* CHSKWXAPIDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5C5B162416590A005C93EE /* CHSKWXAPIDefines.h */; };
 		3B5C5B192416590A005C93EE /* CHSKWXAPIDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5C5B172416590A005C93EE /* CHSKWXAPIDefines.m */; };
+		3B5C5B202416B33F005C93EE /* CHSKWXCheckHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5C5B1E2416B33F005C93EE /* CHSKWXCheckHelper.h */; };
+		3B5C5B212416B33F005C93EE /* CHSKWXCheckHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5C5B1F2416B33F005C93EE /* CHSKWXCheckHelper.m */; };
+		3B5C5B2624174CC1005C93EE /* CHSKWXError.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5C5B2224174CC0005C93EE /* CHSKWXError.m */; };
+		3B5C5B2724174CC1005C93EE /* CHSKWXCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5C5B2324174CC0005C93EE /* CHSKWXCredential.m */; };
+		3B5C5B2824174CC1005C93EE /* CHSKWXError.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5C5B2424174CC0005C93EE /* CHSKWXError.h */; };
+		3B5C5B2924174CC1005C93EE /* CHSKWXCredential.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5C5B2524174CC0005C93EE /* CHSKWXCredential.h */; };
 		3B93C11E93F9DE9EFDC3D0D879FFA483 /* NSPointerArray+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 7891F132E6F5EE6886F1EBD63419B781 /* NSPointerArray+CHBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3C296FCB01F7150C965D577F292434E9 /* SDWebImageDownloaderDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C355448220138BF33268ECFA5E3999 /* SDWebImageDownloaderDecryptor.m */; };
 		3C3710616952C9958EB298DE409A4E9B /* CHSKDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = F1895E733D5E155A22639AD096CACEB5 /* CHSKDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -159,7 +163,6 @@
 		4B53ACE0D2CC76CCD2D74791D5214FE7 /* NSNumber+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = EF66810F16E46E678C41C386E43761E5 /* NSNumber+CHBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4C5335742B257B9C7CD4E06BA411C138 /* CHSKPrivateDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF2F6F5112960BD8818DB1112B6C5D4 /* CHSKPrivateDefines.m */; };
 		4C590FDA2B682AE9343A1A113941A9F1 /* SDImageHEICCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F0BD3BC6D007B2CAA92DD476807BCA4 /* SDImageHEICCoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4D4241A5C18F8998B71C498F556920B7 /* NSObject+CHShareKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97C9C435268AE871127A295C09FF90 /* NSObject+CHShareKit.m */; };
 		4E7137FB38746E62FB72FB1775151154 /* CHSKUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF6AD114F3F2B10BA3A9AD9B7C7065D /* CHSKUser.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4EA11778A7F8D75ACE587E89C09F348D /* UIDevice+CHMachineInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 786DDBFD27B989BC615DEF6DFE1E6F1E /* UIDevice+CHMachineInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4F61CB81941D96F2F8C9E73DC27F19B8 /* CHSKImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5553F5B553CD055017D849F7E71C91D3 /* CHSKImageDownloader.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -218,7 +221,6 @@
 		72797BC85469FCE7E6198B67EC88E851 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAAC49E7328530BB31B0F338D40561B /* AFURLRequestSerialization.m */; };
 		728C7B4B4EE5DAE224BBE47F41EC96F0 /* NSData+CHCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 839A109EE3F477E7ADA322341733B097 /* NSData+CHCrypto.m */; };
 		7302C3E757E2C83999EB21A967FEE004 /* NSFileManager+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE68E6830318335B8D8102AE503AAE1 /* NSFileManager+CHBase.m */; };
-		731E9EA9774151A7E8A0CE227139552A /* NSArray+CHShareKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B7D8BACB3FCB9F638B9F8A9D83389A14 /* NSArray+CHShareKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		73A99C3348C82F5E5BDCDB8723E215E2 /* UITabBarItem+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F9EEC3B41F7CCC5FAA18CAB05DF07D /* UITabBarItem+CHBase.m */; };
 		7457638D8B4B3675EFDFC27D1802E549 /* UIFont+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EBAC3B26151692E444C6CD9343EFED /* UIFont+CHBase.m */; };
 		748DF1110C737DF8B47908314F1FD7C0 /* UIView+CHAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = DFF0DE6679D9C1A91F2CB8679115C9A3 /* UIView+CHAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -355,7 +357,6 @@
 		CEBD9274E319EA7BBD5FC089E8D0F945 /* SDImageCacheDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = C3E3A6F98A3726F3F332660423EAA815 /* SDImageCacheDefine.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CFB8E4D90CBB7535330FBDF6A800835D /* NSURLComponents+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A55EFD5E85B84CDE749846BFD6B323BF /* NSURLComponents+CHBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CFBA6CEBEF1F8476E21C4F80428CBD82 /* UIBarItem+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F7699F36CCD3EA530D48CEED8C3C0D /* UIBarItem+CHBase.m */; };
-		D15C3097755AE64579AA6B7F2EB2BE1B /* NSObject+CHShareKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F02F9AA7C93148BFDD6BE06C1221A7 /* NSObject+CHShareKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D19D7D826022F14BBF312CAA0DFCECBB /* CHSKNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C116E41C73C1832FE6A56CF970FE2B1 /* CHSKNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D2045B5216AC12E1757ECF74C9A570F1 /* CHSKShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BD0A0977BF427016DA6B7ABCB895F7 /* CHSKShare.m */; };
 		D280A3B13923FF5FA778EF312BD965F7 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C881BDDB5CF8415812E8DCAA4B951FF4 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -402,7 +403,6 @@
 		F2CED78A91E7D670841DFDA859F0354E /* UITableViewCell+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A238F326E2C7BD12D2C45EBA667E70 /* UITableViewCell+CHBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F350B75408DE7D70710278EEE4B946D5 /* UIViewController+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = BF643603EE87562307245A1F2BBC0D52 /* UIViewController+CHBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F39BBA86A9CFEE65D7382C086CE4EB7D /* UICollectionView+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6218A4A1D79E846170E59769FAD46D67 /* UICollectionView+CHBase.m */; };
-		F590EDA6B6CA8CBD66564B093262C1E6 /* NSURL+CHShareKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D34CC58F58A5B914578C87235DCB9C1 /* NSURL+CHShareKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F5E29E826E0C6D09362FFD4F2CF57C75 /* SDDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 121A94446F63C6AFECF2543ACF9C6221 /* SDDiskCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F74B3FFF160D3A7B0FC1DB6272CF6C36 /* SDDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BA3DF8CE041728F967ECB6AC5DBE5D /* SDDiskCache.m */; };
 		F77C12A35D1AB31B0FC967709EA37FDD /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 131142B7F783C98C9AD2B0D98E6B4417 /* NSData+ImageContentType.m */; };
@@ -616,8 +616,13 @@
 		3B5C5B132416585E005C93EE /* CHSKNetworking+CHSKWX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CHSKNetworking+CHSKWX.m"; path = "CHShareKit/Classes/WXBridge/CHSKNetworking+CHSKWX.m"; sourceTree = "<group>"; };
 		3B5C5B162416590A005C93EE /* CHSKWXAPIDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CHSKWXAPIDefines.h; path = CHShareKit/Classes/WXBridge/CHSKWXAPIDefines.h; sourceTree = "<group>"; };
 		3B5C5B172416590A005C93EE /* CHSKWXAPIDefines.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CHSKWXAPIDefines.m; path = CHShareKit/Classes/WXBridge/CHSKWXAPIDefines.m; sourceTree = "<group>"; };
+		3B5C5B1E2416B33F005C93EE /* CHSKWXCheckHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CHSKWXCheckHelper.h; path = CHShareKit/Classes/WXBridge/CHSKWXCheckHelper.h; sourceTree = "<group>"; };
+		3B5C5B1F2416B33F005C93EE /* CHSKWXCheckHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CHSKWXCheckHelper.m; path = CHShareKit/Classes/WXBridge/CHSKWXCheckHelper.m; sourceTree = "<group>"; };
+		3B5C5B2224174CC0005C93EE /* CHSKWXError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHSKWXError.m; path = CHShareKit/Classes/WXBridge/CHSKWXError.m; sourceTree = "<group>"; };
+		3B5C5B2324174CC0005C93EE /* CHSKWXCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHSKWXCredential.m; path = CHShareKit/Classes/WXBridge/CHSKWXCredential.m; sourceTree = "<group>"; };
+		3B5C5B2424174CC0005C93EE /* CHSKWXError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHSKWXError.h; path = CHShareKit/Classes/WXBridge/CHSKWXError.h; sourceTree = "<group>"; };
+		3B5C5B2524174CC0005C93EE /* CHSKWXCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHSKWXCredential.h; path = CHShareKit/Classes/WXBridge/CHSKWXCredential.h; sourceTree = "<group>"; };
 		3B7899CED2D36EB3A70017E3948A4611 /* UIBarItem+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarItem+CHBase.h"; path = "CHCategories/Classes/UIKit/UIBarItem/UIBarItem+CHBase.h"; sourceTree = "<group>"; };
-		3B97C9C435268AE871127A295C09FF90 /* NSObject+CHShareKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CHShareKit.m"; sourceTree = "<group>"; };
 		3BC8AC0DE9D728D55AD5750DC5341224 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
 		3D58848E4ACA63DC955E3D1435B45B49 /* SDImageIOCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageIOCoder.h; path = SDWebImage/Core/SDImageIOCoder.h; sourceTree = "<group>"; };
 		3D99016A4C9D9180A2FE37CEFC23E27E /* NSString+CHShareKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+CHShareKit.m"; sourceTree = "<group>"; };
@@ -763,7 +768,6 @@
 		8B29E2E17E20E8BAC4DA9D66BCF5EE53 /* CHShareKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CHShareKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8B3866B8EFE2FD38980FD0BA361228A6 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/Core/NSData+ImageContentType.h"; sourceTree = "<group>"; };
 		8D2FFE50269702870A57AA6CB66B74DC /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
-		8D34CC58F58A5B914578C87235DCB9C1 /* NSURL+CHShareKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSURL+CHShareKit.h"; sourceTree = "<group>"; };
 		8DD6A9F81D1117D805279B59F3DA19E1 /* UIImage+ExtendedCacheData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ExtendedCacheData.m"; path = "SDWebImage/Core/UIImage+ExtendedCacheData.m"; sourceTree = "<group>"; };
 		8E94B5D837FE12202A8CF510854966DA /* SDAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImage.m; path = SDWebImage/Core/SDAnimatedImage.m; sourceTree = "<group>"; };
 		8E9905DCB6A30C77B47E7B7BEEAC8D0D /* NSCharacterSet+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCharacterSet+CHBase.m"; path = "CHCategories/Classes/Foundation/NSCharacterSet/NSCharacterSet+CHBase.m"; sourceTree = "<group>"; };
@@ -789,7 +793,6 @@
 		9D29D742DE6DAB58073C4B162519D10C /* SDDeviceHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDDeviceHelper.m; path = SDWebImage/Private/SDDeviceHelper.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DBD77F1DD066992AC3DE29C368EA02E /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
-		9ECDD18ECEE9C10E5B4377AFC824049B /* NSArray+CHShareKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CHShareKit.m"; sourceTree = "<group>"; };
 		9ED8215319C330A334F2322B2E866896 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/Core/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		9EE4965CD683123061582E85AA4D74C9 /* SDImageLoadersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageLoadersManager.h; path = SDWebImage/Core/SDImageLoadersManager.h; sourceTree = "<group>"; };
 		9FCE94652A8330F400832E869835AAED /* SDImageCachesManagerOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCachesManagerOperation.h; path = SDWebImage/Private/SDImageCachesManagerOperation.h; sourceTree = "<group>"; };
@@ -813,7 +816,6 @@
 		A69EFB5E7108FC553F6F667AD0E62643 /* Pods-CHShareKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CHShareKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A86D14B513025D8684D56D4223C2B765 /* UIBezierPath+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBezierPath+CHBase.h"; path = "CHCategories/Classes/UIKit/UIBezierPath/UIBezierPath+CHBase.h"; sourceTree = "<group>"; };
 		A95DF3A9CCBC3E6CBD5A173BB9E0CD07 /* NSKeyedArchiver+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSKeyedArchiver+CHBase.m"; path = "CHCategories/Classes/Foundation/NSKeyedArchiver/NSKeyedArchiver+CHBase.m"; sourceTree = "<group>"; };
-		A998C577AF75CC63455594E9CD0AFFB1 /* NSURL+CHShareKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSURL+CHShareKit.m"; sourceTree = "<group>"; };
 		AC426C832A64A45BA6C25C4842358904 /* UIActivityIndicatorView+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+CHBase.h"; path = "CHCategories/Classes/UIKit/UIActivityIndicatorView/UIActivityIndicatorView+CHBase.h"; sourceTree = "<group>"; };
 		AD54137852B85ACAB6C580E6C9B673BA /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = OpenSDK1.8.6.2/WXApi.h; sourceTree = "<group>"; };
 		AE0E736D96A5EBD251813B911ADCA505 /* NSString+CHTrimming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+CHTrimming.h"; path = "CHCategories/Classes/Foundation/NSString/NSString+CHTrimming.h"; sourceTree = "<group>"; };
@@ -835,7 +837,6 @@
 		B5021FB450DA5BC8991B7432E8B15C22 /* NSObject+CHMultipleDelegates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+CHMultipleDelegates.h"; path = "CHCategories/Classes/Foundation/NSObject/NSObject+CHMultipleDelegates.h"; sourceTree = "<group>"; };
 		B58575AFB948EDA5DC481C175B39A5D8 /* SDAnimatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageView.m; path = SDWebImage/Core/SDAnimatedImageView.m; sourceTree = "<group>"; };
 		B7450B4F3F9A1BE8A97C691E84887DA1 /* NSString+CHEmoji.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+CHEmoji.h"; path = "CHCategories/Classes/Foundation/NSString/NSString+CHEmoji.h"; sourceTree = "<group>"; };
-		B7D8BACB3FCB9F638B9F8A9D83389A14 /* NSArray+CHShareKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+CHShareKit.h"; sourceTree = "<group>"; };
 		B81795763A8E61C34A41DED65D4EFEA7 /* WechatOpenSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WechatOpenSDK.release.xcconfig; sourceTree = "<group>"; };
 		B87B28D5D6E6C5D986F8F64A3D48F272 /* UIApplication+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+CHBase.m"; path = "CHCategories/Classes/UIKit/UIApplication/UIApplication+CHBase.m"; sourceTree = "<group>"; };
 		B8E886D84D6D95E6B4AC2C7476A63482 /* NSObject+CHKeyValueObserving.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+CHKeyValueObserving.h"; path = "CHCategories/Classes/Foundation/NSObject/NSObject+CHKeyValueObserving.h"; sourceTree = "<group>"; };
@@ -856,7 +857,6 @@
 		C11CCC3A52304A771942929EC5588867 /* SDImageAssetManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAssetManager.h; path = SDWebImage/Private/SDImageAssetManager.h; sourceTree = "<group>"; };
 		C18A7E7DA43FC967F9E899FD8FDA29E5 /* CHSKUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CHSKUser.m; path = CHShareKit/Classes/Core/CHSKUser.m; sourceTree = "<group>"; };
 		C1974A2DFBB7BED477B1512A2F313F61 /* UISlider+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISlider+CHBase.h"; path = "CHCategories/Classes/UIKit/UISlider/UISlider+CHBase.h"; sourceTree = "<group>"; };
-		C1F02F9AA7C93148BFDD6BE06C1221A7 /* NSObject+CHShareKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+CHShareKit.h"; sourceTree = "<group>"; };
 		C1F92EBA056475764A8E3500CA6D5B03 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
 		C305A9A3353B61A81E4178D5D373A8DD /* NSButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSButton+WebCache.h"; path = "SDWebImage/Core/NSButton+WebCache.h"; sourceTree = "<group>"; };
 		C3C1C6355FE6E7AEEEBFA648F2731AF7 /* UITextField+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+CHBase.m"; path = "CHCategories/Classes/UIKit/UITextField/UITextField+CHBase.m"; sourceTree = "<group>"; };
@@ -2527,16 +2527,10 @@
 		E155CFAF455ED9BFE4E1916E5CDD9E9A /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				B7D8BACB3FCB9F638B9F8A9D83389A14 /* NSArray+CHShareKit.h */,
-				9ECDD18ECEE9C10E5B4377AFC824049B /* NSArray+CHShareKit.m */,
 				FE9FA1D27514C911B84A880E1A5232A5 /* NSError+CHShareKit.h */,
 				EFF09ED79C731C889CC472DA93655C68 /* NSError+CHShareKit.m */,
-				C1F02F9AA7C93148BFDD6BE06C1221A7 /* NSObject+CHShareKit.h */,
-				3B97C9C435268AE871127A295C09FF90 /* NSObject+CHShareKit.m */,
 				824C4141F5B7F02812C30DCBCB0B8BBF /* NSString+CHShareKit.h */,
 				3D99016A4C9D9180A2FE37CEFC23E27E /* NSString+CHShareKit.m */,
-				8D34CC58F58A5B914578C87235DCB9C1 /* NSURL+CHShareKit.h */,
-				A998C577AF75CC63455594E9CD0AFFB1 /* NSURL+CHShareKit.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -2835,12 +2829,18 @@
 		FB847178DDAF30AE2D9B1C5F3114D191 /* WXBridge */ = {
 			isa = PBXGroup;
 			children = (
+				3B5C5B2524174CC0005C93EE /* CHSKWXCredential.h */,
+				3B5C5B2324174CC0005C93EE /* CHSKWXCredential.m */,
+				3B5C5B2424174CC0005C93EE /* CHSKWXError.h */,
+				3B5C5B2224174CC0005C93EE /* CHSKWXError.m */,
 				3B5C5B122416585E005C93EE /* CHSKNetworking+CHSKWX.h */,
 				3B5C5B132416585E005C93EE /* CHSKNetworking+CHSKWX.m */,
 				9A824628E06AAF051D2517E82AE5419C /* CHSKWXBridge.h */,
 				9BA842EA414A34FDE2FCBAC23D8BA311 /* CHSKWXBridge.m */,
 				3B5C5B162416590A005C93EE /* CHSKWXAPIDefines.h */,
 				3B5C5B172416590A005C93EE /* CHSKWXAPIDefines.m */,
+				3B5C5B1E2416B33F005C93EE /* CHSKWXCheckHelper.h */,
+				3B5C5B1F2416B33F005C93EE /* CHSKWXCheckHelper.m */,
 			);
 			name = WXBridge;
 			sourceTree = "<group>";
@@ -2915,12 +2915,15 @@
 				2D6FD85654B8A88ADE6CE769AD1D799D /* CHShareKit.h in Headers */,
 				56471CE4D2EFBCD32006DD2DBC0B39DF /* CHSKCheckHelper.h in Headers */,
 				9F95ADFF352396A2A31017FA9ADCA04B /* CHSKCredential.h in Headers */,
+				3B5C5B2824174CC1005C93EE /* CHSKWXError.h in Headers */,
 				3C3710616952C9958EB298DE409A4E9B /* CHSKDefines.h in Headers */,
+				3B5C5B202416B33F005C93EE /* CHSKWXCheckHelper.h in Headers */,
 				4F61CB81941D96F2F8C9E73DC27F19B8 /* CHSKImageDownloader.h in Headers */,
 				BE068304855875CC0278ADF52EC20D08 /* CHSKMessageConvertHelper.h in Headers */,
 				D19D7D826022F14BBF312CAA0DFCECBB /* CHSKNetworking.h in Headers */,
 				5940F93BD56728587883384B548DF8CE /* CHSKPlatformBridge.h in Headers */,
 				A217C145BB12A088DB560A45E9E7446D /* CHSKPlatformConfiguration.h in Headers */,
+				3B5C5B2924174CC1005C93EE /* CHSKWXCredential.h in Headers */,
 				109BE2521979387AF8EF5FC8D2AD0286 /* CHSKPrivateDefines.h in Headers */,
 				CCA00056A770BD90C5A1F18AB21B5FEE /* CHSKQQBridge.h in Headers */,
 				E1A3A5F1671E9BBACF0F7EAC4ED10FF0 /* CHSKShare.h in Headers */,
@@ -2930,11 +2933,8 @@
 				4E7137FB38746E62FB72FB1775151154 /* CHSKUser.h in Headers */,
 				763DBBE7F0BE8F66EBB3AED0B39968E2 /* CHSKWXBridge.h in Headers */,
 				3B5C5B182416590A005C93EE /* CHSKWXAPIDefines.h in Headers */,
-				731E9EA9774151A7E8A0CE227139552A /* NSArray+CHShareKit.h in Headers */,
 				10D34EA89804E0F5A1046D39299DA9BA /* NSError+CHShareKit.h in Headers */,
-				D15C3097755AE64579AA6B7F2EB2BE1B /* NSObject+CHShareKit.h in Headers */,
 				7E585256602CAF582133D7416CEB17C3 /* NSString+CHShareKit.h in Headers */,
-				F590EDA6B6CA8CBD66564B093262C1E6 /* NSURL+CHShareKit.h in Headers */,
 				3B5C5B142416585E005C93EE /* CHSKNetworking+CHSKWX.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3312,6 +3312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B5C5B192416590A005C93EE /* CHSKWXAPIDefines.m in Sources */,
+				3B5C5B2724174CC1005C93EE /* CHSKWXCredential.m in Sources */,
 				98633A506B532CEBE87FB7B3D9341FF2 /* CHShareKit-dummy.m in Sources */,
 				3113B7098FA9A6B1F857FC59FBD1F98B /* CHSKCheckHelper.m in Sources */,
 				B2D97583642778E4DA04B34D58C1A628 /* CHSKCredential.m in Sources */,
@@ -3323,17 +3324,16 @@
 				AE890B5513464CF219C0E9C7218024DA /* CHSKPlatformConfiguration.m in Sources */,
 				4C5335742B257B9C7CD4E06BA411C138 /* CHSKPrivateDefines.m in Sources */,
 				FD1D5C8D2DF7D3A40740BAB1843B8D9F /* CHSKQQBridge.m in Sources */,
+				3B5C5B212416B33F005C93EE /* CHSKWXCheckHelper.m in Sources */,
 				D2045B5216AC12E1757ECF74C9A570F1 /* CHSKShare.m in Sources */,
 				3B5C5B152416585E005C93EE /* CHSKNetworking+CHSKWX.m in Sources */,
 				DB46635BB9812BDD3179750D2CF2CAE7 /* CHSKShareBridge.m in Sources */,
+				3B5C5B2624174CC1005C93EE /* CHSKWXError.m in Sources */,
 				A064A80DEF1E3AFE3F62E6EDC8F3DC8C /* CHSKShareMessage.m in Sources */,
 				377EBA287F00C724E7460F617B748781 /* CHSKUser.m in Sources */,
 				B47C16F98F7ABB6D40E3421C7A58C30B /* CHSKWXBridge.m in Sources */,
-				2CA2F057D43D78B85547456537ACB30A /* NSArray+CHShareKit.m in Sources */,
 				1B27B4AE9108B2D6A6B3A00E2DD1452B /* NSError+CHShareKit.m in Sources */,
-				4D4241A5C18F8998B71C498F556920B7 /* NSObject+CHShareKit.m in Sources */,
 				71F568D7AE4287EE3A0E6BEE1AF7905A /* NSString+CHShareKit.m in Sources */,
-				0B36E6533BE98A9432CB2C4CD34CF8E8 /* NSURL+CHShareKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

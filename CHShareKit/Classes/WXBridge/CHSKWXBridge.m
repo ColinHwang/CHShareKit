@@ -11,6 +11,7 @@
 #import "CHSKWXCredential.h"
 
 #import <CHCategories/CHCategories.h>
+#import "CHSKWXCheckHelper.h"
 #import "CHSKPrivateDefines.h"
 #import "CHSKMessageConvertHelper.h"
 #import "CHSKNetworking+CHSKWX.h"
@@ -197,7 +198,80 @@
     }];
 }
 
+- (NSInteger)isValidShareMessage:(CHSKShareMessage *)message platformType:(CHSKPlatformType)platformType {
+    NSInteger code = [super isValidShareMessage:message platformType:platformType];
+    
+    switch (platformType) {
+        case CHSKPlatformTypeWX:
+        case CHSKPlatformTypeWXSession:
+        case CHSKPlatformTypeWXTimeline:
+        {
+            code = [self isValidShareMessageForWX:message];
+        }
+            break;
+
+        default:
+            break;
+    }
+    return code;
+}
+
 #pragma mark - Private methods
+- (NSInteger)isValidShareMessageForWX:(CHSKShareMessage *)shareMessage {
+    if (!shareMessage) return CHSKErrorCodeInvalidMessage;
+    
+    switch (shareMessage.type) {
+        case CHSKMessageTypeUndefined:
+            return CHSKErrorCodeUnsupportMessageType;
+            break;
+        case CHSKMessageTypeText:
+        {
+            if (![CHSKWXCheckHelper isValidTitle:shareMessage.title]) return CHSKErrorCodeInvalidMessageTitle;
+        }
+            break;
+        case CHSKMessageTypeImage:
+        {
+            if (![CHSKWXCheckHelper isValidImages:shareMessage.images]) return CHSKErrorCodeInvalidMessageImages;
+        }
+            break;
+        case CHSKMessageTypeWebPage:
+        {
+            if (![CHSKWXCheckHelper isValidTitle:shareMessage.title]) return CHSKErrorCodeInvalidMessageTitle;
+            if (![CHSKWXCheckHelper isValidDesc:shareMessage.desc]) return CHSKErrorCodeInvalidMessageDesc;
+            if (![CHSKWXCheckHelper isValidURL:shareMessage.url]) return CHSKErrorCodeInvalidMessageURL;
+            if (![CHSKWXCheckHelper isValidImages:shareMessage.images] && ![CHSKWXCheckHelper isValidImage:shareMessage.thumbnail]) return CHSKErrorCodeInvalidMessageImages;
+        }
+            break;
+        case CHSKMessageTypeVideo:
+        case CHSKMessageTypeApp:
+        {
+            if (![CHSKWXCheckHelper isValidTitle:shareMessage.title]) return CHSKErrorCodeInvalidMessageTitle;
+            if (![CHSKWXCheckHelper isValidDesc:shareMessage.desc]) return CHSKErrorCodeInvalidMessageDesc;
+            if (![CHSKWXCheckHelper isValidURL:shareMessage.url]) return CHSKErrorCodeInvalidMessageURL;
+            if (![CHSKWXCheckHelper isValidImages:shareMessage.images] && ![CHSKWXCheckHelper isValidImage:shareMessage.thumbnail]) return CHSKErrorCodeInvalidMessageImages;
+        }
+            break;
+        case CHSKMessageTypeAudio:
+        {
+            if (![CHSKWXCheckHelper isValidTitle:shareMessage.title]) return CHSKErrorCodeInvalidMessageTitle;
+            if (![CHSKWXCheckHelper isValidDesc:shareMessage.desc]) return CHSKErrorCodeInvalidMessageDesc;
+            if (![CHSKWXCheckHelper isValidURL:shareMessage.url]) return CHSKErrorCodeInvalidMessageURL;
+            if (![CHSKWXCheckHelper isValidURL:shareMessage.mediaDataUrl]) return CHSKErrorCodeInvalidMessageURL;
+            if (![CHSKWXCheckHelper isValidImages:shareMessage.images] && ![CHSKWXCheckHelper isValidImage:shareMessage.thumbnail]) return CHSKErrorCodeInvalidMessageImages;
+        }
+            break;
+        case CHSKMessageTypeFile:
+        {
+            if (![CHSKWXCheckHelper isValidTitle:shareMessage.title]) return CHSKErrorCodeInvalidMessageTitle;
+            if (![CHSKWXCheckHelper isValidDesc:shareMessage.desc]) return CHSKErrorCodeInvalidMessageDesc;
+            if (!shareMessage.fileExt) return CHSKErrorCodeInvalidMessageFileExt;
+            if (![CHSKWXCheckHelper isValidImages:shareMessage.images] && ![CHSKWXCheckHelper isValidImage:shareMessage.thumbnail]) return CHSKErrorCodeInvalidMessageImages;
+        }
+            break;
+    }
+    return CHSKShareMessageValidCode;
+}
+
 - (void)loadWXAuthorizeInfo:(SendAuthResp *)authResp completionHandler:(CHSKLoadAuthorizeInfoCompletionHandler)completionHandler {
     [CHSKNetworking getWXAccessTokenWithCode:authResp.code appId:self.platformConfiguration.appId appSecret:self.platformConfiguration.appSecret success:^(id _Nonnull data) {
         CHSKWXCredential *wxCredential = [CHSKWXCredential yy_modelWithJSON:data];

@@ -10,10 +10,6 @@
 #ifndef CHSKPrivateDefines_h
 #define CHSKPrivateDefines_h
 
-#ifndef CH_SK_STR_AVOID_NIL
-#define CH_SK_STR_AVOID_NIL( _value_ ) (_value_) ? : @""
-#endif
-
 // WX
 FOUNDATION_EXTERN NSString * const CHSKPlatformWXIDKey;
 FOUNDATION_EXTERN NSString * const CHSKPlatformWXSecretKey;
@@ -24,7 +20,7 @@ FOUNDATION_EXTERN NSString * const CHSKPlatformQQSecretKey;
 
 // Message Regular
 // Share Message Code
-FOUNDATION_EXTERN const NSInteger CHSKWXShareMessageValidCode;
+FOUNDATION_EXTERN const NSInteger CHSKShareMessageValidCode;
 // Share Title Length
 FOUNDATION_EXTERN const NSInteger CHSKWXShareTitleMaxLength;
 // Share Desc Length

@@ -6,55 +6,58 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CHSKDefines.h"
-
-@class CHSKShareMessage;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CHSKCheckHelper : NSObject
 
-#pragma mark - Check Share Message
 /**
- 根据分享平台类型, 检测分享信息是否有效
- 
- @param shareMessage 分享信息
- @param platformType 分享平台类型
- @return 分享信息有效返回CHSKWXShareMessageValidCode, 否则返回CHSKErrorCode
- */
-+ (NSInteger)isValidShareMessage:(CHSKShareMessage *)shareMessage forSharePlatform:(CHSKPlatformType)platformType;
+ 是否为有效的分享标题
+
+ @param title 分享标题
+ @return 是返回YES, 否则返回NO
+*/
++ (BOOL)isValidTitle:(NSString *)title;
 
 /**
- 检测微信好友分享信息是否有效
- 
- @param shareMessage 分享信息
- @return 分享信息有效返回CHSKWXShareMessageValidCode, 否则返回CHSKErrorCode
- */
-+ (NSInteger)isValidShareMessageForWXSession:(CHSKShareMessage *)shareMessage;
+ 是否为有效的分享详情
+
+ @param desc 分享详情
+ @return 是返回YES, 否则返回NO
+*/
++ (BOOL)isValidDesc:(NSString *)desc;
 
 /**
- 检测微信朋友圈分享信息是否有效
- 
- @param shareMessage 分享信息
- @return 分享信息有效返回CHSKWXShareMessageValidCode, 否则返回CHSKErrorCode
- */
-+ (NSInteger)isValidShareMessageForWXTimeline:(CHSKShareMessage *)shareMessage;
+ 是否为有效的分享URL字符串
+
+ @param URLString URL字符串
+ @return 是返回YES, 否则返回NO
+*/
++ (BOOL)isValidURLString:(NSString *)URLString;
 
 /**
- 检测QQ好友分享信息是否有效
- 
- @param shareMessage 分享信息
- @return 分享信息有效返回CHSKWXShareMessageValidCode, 否则返回CHSKErrorCode
- */
-+ (NSInteger)isValidShareMessageForQQFriends:(CHSKShareMessage *)shareMessage;
+ 是否为有效的分享URL
+
+ @param URL URL
+ @return 是返回YES, 否则返回NO
+*/
++ (BOOL)isValidURL:(NSURL *)URL;
 
 /**
- 检测QQ空间分享信息是否有效
- 
- @param shareMessage 分享信息
- @return 分享信息有效返回CHSKWXShareMessageValidCode, 否则返回CHSKErrorCode
- */
-+ (NSInteger)isValidShareMessageForQZone:(CHSKShareMessage *)shareMessage;
+ 是否为有效的分享图片
+
+ @param image 分享图片
+ @return 是返回YES, 否则返回NO
+*/
++ (BOOL)isValidImage:(id)image;
+
+/**
+ 是否为有效的分享图片组
+
+ @param images 分享图片组
+ @return 是返回YES, 否则返回NO
+*/
++ (BOOL)isValidImages:(NSArray<id> *)images;
 
 @end
 

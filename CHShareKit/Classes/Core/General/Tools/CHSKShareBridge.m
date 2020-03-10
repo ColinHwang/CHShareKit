@@ -11,7 +11,6 @@
 #import "CHSKUser.h"
 
 #import <CHCategories/CHCategories.h>
-#import "CHSKCheckHelper.h"
 #import "CHSKMessageConvertHelper.h"
 #import "CHSKPrivateDefines.h"
 #import "NSError+CHShareKit.h"
@@ -186,16 +185,17 @@
         return;
     }
     
+    CHSKPlatformBridge *bridge = [CHSKPlatformBridge sharedBridgeWithType:platformType];
     // 检测分享参数
-    NSInteger messageCode = [CHSKCheckHelper isValidShareMessage:message forSharePlatform:platformType];
-    if (messageCode != CHSKWXShareMessageValidCode) {
+    NSInteger messageCode = [bridge isValidShareMessage:message platformType:platformType];
+    if (messageCode != CHSKShareMessageValidCode) {
         error = [NSError ch_sk_errorWithCode:messageCode];
         !shareHandler ?: shareHandler(CHSKResponseStateFailure, nil, extraData.copy, error);
         !shareHandler ?: shareHandler(CHSKResponseStateFinish, nil, nil, nil);
         return;
     }
 
-    [[CHSKPlatformBridge sharedBridgeWithType:platformType] share:message platformType:platformType shareHandler:shareHandler];
+    [bridge share:message platformType:platformType shareHandler:shareHandler];
 }
 
 #pragma mark - Extension

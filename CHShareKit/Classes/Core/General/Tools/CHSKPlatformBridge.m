@@ -9,6 +9,8 @@
 
 #import "NSError+CHShareKit.h"
 
+#import "CHSKPrivateDefines.h"
+
 @implementation CHSKPlatformBridge
 
 #pragma mark - Base
@@ -135,6 +137,13 @@
         !shareHandler ?: shareHandler(CHSKResponseStateFinish, nil, nil, nil);
         return;
     }
+}
+
+- (NSInteger)isValidShareMessage:(CHSKShareMessage *)message platformType:(CHSKPlatformType)platformType {
+    if (!message) return CHSKErrorCodeInvalidMessage;
+    if (platformType == CHSKMessageTypeUndefined) return CHSKErrorCodeUnsupportMessageType;
+    
+    return CHSKErrorCodeUnsupportMessageType;
 }
 
 #pragma mark - Private methods

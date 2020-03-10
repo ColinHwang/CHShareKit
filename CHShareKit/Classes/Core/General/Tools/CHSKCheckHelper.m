@@ -6,185 +6,45 @@
 //
 
 #import "CHSKCheckHelper.h"
-
-#import "CHSKShareMessage.h"
-
-#import "CHSKPrivateDefines.h"
-#import "NSArray+CHShareKit.h"
-#import "NSObject+CHShareKit.h"
 #import "NSString+CHShareKit.h"
-#import "NSURL+CHShareKit.h"
 
 @implementation CHSKCheckHelper
 
-#pragma mark - Check Share Message
-+ (NSInteger)isValidShareMessage:(CHSKShareMessage *)shareMessage forSharePlatform:(CHSKPlatformType)platformType {
-    switch (platformType) {
-        case CHSKPlatformTypeWXSession:
-        case CHSKPlatformTypeWX:
-            return [self isValidShareMessageForWXSession:shareMessage];
-        case CHSKPlatformTypeWXTimeline:
-            return [self isValidShareMessageForWXTimeline:shareMessage];
-        case CHSKPlatformTypeQQ:
-        case CHSKPlatformTypeQQFriends:
-            return [self isValidShareMessageForQQFriends:shareMessage];
-        case CHSKPlatformTypeQZone:
-            return [self isValidShareMessageForQZone:shareMessage];
-        case CHSKPlatformTypeUndefined:
-            return CHSKErrorCodeUndefined;
-    }
-    return CHSKErrorCodeUndefined;
+#pragma mark - Public methods
++ (BOOL)isValidTitle:(NSString *)title {
+    return title != nil;
 }
 
-+ (NSInteger)isValidShareMessageForWXSession:(CHSKShareMessage *)shareMessage {
-    return [self isValidShareMessageForWX:shareMessage];
++ (BOOL)isValidDesc:(NSString *)desc {
+    return desc != nil;
 }
 
-+ (NSInteger)isValidShareMessageForWXTimeline:(CHSKShareMessage *)shareMessage {
-    return [self isValidShareMessageForWX:shareMessage];
++ (BOOL)isValidURLString:(NSString *)URLString {
+    return URLString.length;
 }
 
-+ (NSInteger)isValidShareMessageForWX:(CHSKShareMessage *)shareMessage {
-    if (!shareMessage) return CHSKErrorCodeInvalidMessage;
++ (BOOL)isValidURL:(NSURL *)URL {
+    return URL && URL.absoluteString.length;
+}
+
++ (BOOL)isValidImage:(id)image {
+    if (!image) return NO;
+    if ([image isKindOfClass:[UIImage class]]) return YES;
+    if ([image isKindOfClass:[NSURL class]]) return [self isValidURL:image];
+    if ([image isKindOfClass:[NSString class]]) return [self isValidURLString:image];
     
-    switch (shareMessage.type) {
-        case CHSKMessageTypeUndefined:
-            return CHSKErrorCodeUnsupportMessageType;
-            break;
-        case CHSKMessageTypeText:
-        {
-            if (![shareMessage.title ch_sk_isValidTitleForWX]) return CHSKErrorCodeInvalidMessageTitle;
-        }
-            break;
-        case CHSKMessageTypeImage:
-        {
-            if (![shareMessage.images ch_sk_isValidShareImagesForWX]) return CHSKErrorCodeInvalidMessageImages;
-        }
-            break;
-        case CHSKMessageTypeWebPage:
-        {            
-            if (![shareMessage.title ch_sk_isValidTitleForWX]) return CHSKErrorCodeInvalidMessageTitle;
-            if (![shareMessage.desc ch_sk_isValidDescForWX]) return CHSKErrorCodeInvalidMessageDesc;
-            if (![shareMessage.url ch_sk_isValidURLForWX]) return CHSKErrorCodeInvalidMessageURL;
-            if (![shareMessage.images ch_sk_isValidShareImagesForWX] && ![shareMessage.thumbnail ch_sk_isValidShareImageForWX]) return CHSKErrorCodeInvalidMessageImages;
-        }
-            break;
-        case CHSKMessageTypeVideo:
-        case CHSKMessageTypeApp:
-        {
-            if (![shareMessage.title ch_sk_isValidTitleForWX]) return CHSKErrorCodeInvalidMessageTitle;
-            if (![shareMessage.desc ch_sk_isValidDescForWX]) return CHSKErrorCodeInvalidMessageDesc;
-            if (![shareMessage.url ch_sk_isValidURLForWX]) return CHSKErrorCodeInvalidMessageURL;
-            if (![shareMessage.images ch_sk_isValidShareImagesForWX] && ![shareMessage.thumbnail ch_sk_isValidShareImageForWX]) return CHSKErrorCodeInvalidMessageImages;
-        }
-            break;
-        case CHSKMessageTypeAudio:
-        {
-            return CHSKErrorCodeUnsupportMessageType;
-            
-            if (![shareMessage.title ch_sk_isValidTitleForWX]) return CHSKErrorCodeInvalidMessageTitle;
-            if (![shareMessage.desc ch_sk_isValidDescForWX]) return CHSKErrorCodeInvalidMessageDesc;
-            if (![shareMessage.url ch_sk_isValidURLForWX]) return CHSKErrorCodeInvalidMessageURL;
-            if (![shareMessage.mediaDataUrl ch_sk_isValidURLForWX]) return CHSKErrorCodeInvalidMessageURL;
-            if (![shareMessage.images ch_sk_isValidShareImagesForWX] && ![shareMessage.thumbnail ch_sk_isValidShareImageForWX]) return CHSKErrorCodeInvalidMessageImages;
-        }
-            break;
-        case CHSKMessageTypeFile:
-        {
-            return CHSKErrorCodeUnsupportMessageType;
-            
-            if (![shareMessage.title ch_sk_isValidTitleForWX]) return CHSKErrorCodeInvalidMessageTitle;
-            if (![shareMessage.desc ch_sk_isValidDescForWX]) return CHSKErrorCodeInvalidMessageDesc;
-            if (!shareMessage.fileExt) return CHSKErrorCodeInvalidMessageFileExt;
-            if (![shareMessage.images ch_sk_isValidShareImagesForWX] && ![shareMessage.thumbnail ch_sk_isValidShareImageForWX]) return CHSKErrorCodeInvalidMessageImages;
-        }
-            break;
-    }
-    return CHSKWXShareMessageValidCode;
+    return NO;
 }
 
-+ (NSInteger)isValidShareMessageForQQFriends:(CHSKShareMessage *)shareMessage {
-    if (!shareMessage) return CHSKErrorCodeInvalidMessage;
++ (BOOL)isValidImages:(NSArray<id> *)images {
+    if (!images.count) return NO;
     
-    switch (shareMessage.type) {
-        case CHSKMessageTypeUndefined:
-        case CHSKMessageTypeApp:
-        case CHSKMessageTypeFile:
-            return CHSKErrorCodeUnsupportMessageType;
-            break;
-        case CHSKMessageTypeText:
-        {
-            if (!shareMessage.title) return CHSKErrorCodeInvalidMessageTitle;
-        }
-            break;
-        case CHSKMessageTypeImage:
-        {
-            if (!shareMessage.title) return CHSKErrorCodeInvalidMessageTitle;
-            if (!shareMessage.desc) return CHSKErrorCodeInvalidMessageDesc;
-            if (![shareMessage.images ch_sk_isValidShareImages]) return CHSKErrorCodeInvalidMessageImages;
-        }
-            break;
-        case CHSKMessageTypeWebPage:
-        {
-            if (!shareMessage.title) return CHSKErrorCodeInvalidMessageTitle;
-            if (!shareMessage.desc) return CHSKErrorCodeInvalidMessageDesc;
-            if (!shareMessage.url || !shareMessage.url.absoluteString.length) return CHSKErrorCodeInvalidMessageURL;
-            if (![shareMessage.images ch_sk_isValidShareImages] && ![shareMessage.thumbnail ch_sk_isValidClassForShareImage]) return CHSKErrorCodeInvalidMessageImages;
-        }
-            break;
-        case CHSKMessageTypeAudio:
-        case CHSKMessageTypeVideo:
-        {
-            return CHSKErrorCodeUnsupportMessageType;
-            
-            if (!shareMessage.title) return CHSKErrorCodeInvalidMessageTitle;
-            if (!shareMessage.desc) return CHSKErrorCodeInvalidMessageDesc;
-            if (!shareMessage.url || !shareMessage.url.absoluteString.length) return CHSKErrorCodeInvalidMessageURL;
-            if (![shareMessage.images ch_sk_isValidShareImages] && ![shareMessage.thumbnail ch_sk_isValidClassForShareImage]) return CHSKErrorCodeInvalidMessageImages;
-        }
-            break;
+    for (id image in images) {
+        if ([self isValidImage:image]) continue;
+        
+        return NO;
     }
-    return CHSKWXShareMessageValidCode;
-}
-
-+ (NSInteger)isValidShareMessageForQZone:(CHSKShareMessage *)shareMessage {
-    if (!shareMessage) return CHSKErrorCodeInvalidMessage;
-    
-    switch (shareMessage.type) {
-        case CHSKMessageTypeUndefined:
-        case CHSKMessageTypeText:
-        case CHSKMessageTypeApp:
-        case CHSKMessageTypeFile:
-            return CHSKErrorCodeUnsupportMessageType;
-            break;
-        case CHSKMessageTypeImage:
-        {
-            if (!shareMessage.title) return CHSKErrorCodeInvalidMessageTitle;
-            if (!shareMessage.desc) return CHSKErrorCodeInvalidMessageDesc;
-            if (![shareMessage.images ch_sk_isValidShareImages]) return CHSKErrorCodeInvalidMessageImages;
-        }
-            break;
-        case CHSKMessageTypeWebPage:
-        {
-            if (!shareMessage.title) return CHSKErrorCodeInvalidMessageTitle;
-            if (!shareMessage.desc) return CHSKErrorCodeInvalidMessageDesc;
-            if (!shareMessage.url || !shareMessage.url.absoluteString.length) return CHSKErrorCodeInvalidMessageURL;
-            if (![shareMessage.images ch_sk_isValidShareImages] && ![shareMessage.thumbnail ch_sk_isValidClassForShareImage]) return CHSKErrorCodeInvalidMessageImages;
-        }
-            break;
-        case CHSKMessageTypeAudio:
-        case CHSKMessageTypeVideo:
-        {
-            return CHSKErrorCodeUnsupportMessageType;
-            
-            if (!shareMessage.title) return CHSKErrorCodeInvalidMessageTitle;
-            if (!shareMessage.desc) return CHSKErrorCodeInvalidMessageDesc;
-            if (!shareMessage.url || !shareMessage.url.absoluteString.length) return CHSKErrorCodeInvalidMessageURL;
-            if (![shareMessage.images ch_sk_isValidShareImages] && ![shareMessage.thumbnail ch_sk_isValidClassForShareImage]) return CHSKErrorCodeInvalidMessageImages;
-        }
-            break;
-    }
-    return CHSKWXShareMessageValidCode;
+    return YES;
 }
 
 @end

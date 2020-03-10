@@ -17,7 +17,7 @@ NSString * const CHSKPlatformQQSecretKey = @"CHSKPlatformQQSecretKey";
 
 // Message Regular
 // Share Message Code
-const NSInteger CHSKWXShareMessageValidCode = 200;
+const NSInteger CHSKShareMessageValidCode = 200;
 // Share Title Length
 const NSInteger CHSKWXShareTitleMaxLength = 512;
 // Share Desc Length

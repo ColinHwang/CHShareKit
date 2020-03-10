@@ -27,4 +27,7 @@
  platformType:(CHSKPlatformType)platformType
  shareHandler:(CHSKShareHandler)shareHandler;
 
+- (NSInteger)isValidShareMessage:(CHSKShareMessage *)message
+                    platformType:(CHSKPlatformType)platformType;
+
 @end

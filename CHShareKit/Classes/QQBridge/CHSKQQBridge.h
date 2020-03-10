@@ -2,7 +2,7 @@
 //  CHSKQQBridge.h
 //  CHShareKit
 //
-//  Created by Colin on 2019/9/18.
+//  Created by CHwang on 2019/9/18.
 //
 
 #import "CHSKPlatformBridge.h"

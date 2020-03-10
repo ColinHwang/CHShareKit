@@ -2,7 +2,7 @@
 //  CHSKQQBridge.m
 //  CHShareKit
 //
-//  Created by Colin on 2019/9/18.
+//  Created by CHwang on 2019/9/18.
 //
 
 #import "CHSKQQBridge.h"
@@ -14,6 +14,7 @@
 #import <CHCategories/CHCategories.h>
 #import "CHSKMessageConvertHelper.h"
 #import "CHSKPrivateDefines.h"
+#import "CHSKCheckHelper.h"
 #import "NSError+CHShareKit.h"
 #import <TencentOpenAPI/QQApiInterface.h>
 #import <TencentOpenAPI/TencentOAuth.h>
@@ -145,9 +146,9 @@
         credential.expired = [self.tencentOAuth.expirationDate copy];
         
         NSMutableDictionary *credentialData = [[credential yy_modelToJSONObject] mutableCopy];
-        [credentialData setObject:CH_SK_STR_AVOID_NIL(self.tencentOAuth.openId) forKey:@"openid"];
-        [credentialData setObject:CH_SK_STR_AVOID_NIL(self.tencentOAuth.accessToken) forKey:@"accesstoken"];
-        [credentialData setObject:CH_SK_STR_AVOID_NIL(self.tencentOAuth.unionid) forKey:@"unionid"];
+        [credentialData setObject:CH_STRING_AVOID_NIL(self.tencentOAuth.openId) forKey:@"openid"];
+        [credentialData setObject:CH_STRING_AVOID_NIL(self.tencentOAuth.accessToken) forKey:@"accesstoken"];
+        [credentialData setObject:CH_STRING_AVOID_NIL(self.tencentOAuth.unionid) forKey:@"unionid"];
         [credentialData addEntriesFromDictionary:self.tencentOAuth.passData];
         credential.rawData = credentialData.copy;
         
@@ -208,7 +209,6 @@
         flag = [TencentOAuth HandleOpenURL:URL];
         return flag;
     }
-    
     return flag;
 }
 
@@ -300,7 +300,109 @@
     }
 }
 
+- (NSInteger)isValidShareMessage:(CHSKShareMessage *)message platformType:(CHSKPlatformType)platformType {
+    NSInteger code = [super isValidShareMessage:message platformType:platformType];
+    
+    switch (platformType) {
+        case CHSKPlatformTypeQQ:
+        case CHSKPlatformTypeQQFriends:
+        {
+            code = [self isValidShareMessageForQQFriends:message];
+        }
+            break;
+        case CHSKPlatformTypeQZone:
+        {
+            code = [self isValidShareMessageForQZone:message];
+        }
+            break;
+            
+        default:
+            break;
+    }
+    return code;
+}
+
 #pragma mark - Private methods
+- (NSInteger)isValidShareMessageForQQFriends:(CHSKShareMessage *)shareMessage {
+    if (!shareMessage) return CHSKErrorCodeInvalidMessage;
+    
+    switch (shareMessage.type) {
+        case CHSKMessageTypeUndefined:
+        case CHSKMessageTypeApp:
+        case CHSKMessageTypeFile:
+            return CHSKErrorCodeUnsupportMessageType;
+            break;
+        case CHSKMessageTypeText:
+        {
+            if (![CHSKCheckHelper isValidTitle:shareMessage.title]) return CHSKErrorCodeInvalidMessageTitle;
+        }
+            break;
+        case CHSKMessageTypeImage:
+        {
+            if (![CHSKCheckHelper isValidTitle:shareMessage.title]) return CHSKErrorCodeInvalidMessageTitle;
+            if (![CHSKCheckHelper isValidDesc:shareMessage.desc]) return CHSKErrorCodeInvalidMessageDesc;
+            if (![CHSKCheckHelper isValidImages:shareMessage.images]) return CHSKErrorCodeInvalidMessageImages;
+        }
+            break;
+        case CHSKMessageTypeWebPage:
+        {
+            if (![CHSKCheckHelper isValidTitle:shareMessage.title]) return CHSKErrorCodeInvalidMessageTitle;
+            if (![CHSKCheckHelper isValidDesc:shareMessage.desc]) return CHSKErrorCodeInvalidMessageDesc;
+            if (![CHSKCheckHelper isValidURL:shareMessage.url]) return CHSKErrorCodeInvalidMessageURL;
+            if (![CHSKCheckHelper isValidImages:shareMessage.images] && ![CHSKCheckHelper isValidImage:shareMessage.thumbnail]) return CHSKErrorCodeInvalidMessageImages;
+        }
+            break;
+        case CHSKMessageTypeAudio:
+        case CHSKMessageTypeVideo:
+        {
+            if (![CHSKCheckHelper isValidTitle:shareMessage.title]) return CHSKErrorCodeInvalidMessageTitle;
+            if (![CHSKCheckHelper isValidDesc:shareMessage.desc]) return CHSKErrorCodeInvalidMessageDesc;
+            if (![CHSKCheckHelper isValidURL:shareMessage.url]) return CHSKErrorCodeInvalidMessageURL;
+            if (![CHSKCheckHelper isValidImages:shareMessage.images] && ![CHSKCheckHelper isValidImage:shareMessage.thumbnail]) return CHSKErrorCodeInvalidMessageImages;
+        }
+            break;
+    }
+    return CHSKShareMessageValidCode;
+}
+
+- (NSInteger)isValidShareMessageForQZone:(CHSKShareMessage *)shareMessage {
+    if (!shareMessage) return CHSKErrorCodeInvalidMessage;
+    
+    switch (shareMessage.type) {
+        case CHSKMessageTypeUndefined:
+        case CHSKMessageTypeText:
+        case CHSKMessageTypeApp:
+        case CHSKMessageTypeFile:
+            return CHSKErrorCodeUnsupportMessageType;
+            break;
+        case CHSKMessageTypeImage:
+        {
+            if (![CHSKCheckHelper isValidTitle:shareMessage.title]) return CHSKErrorCodeInvalidMessageTitle;
+            if (![CHSKCheckHelper isValidDesc:shareMessage.desc]) return CHSKErrorCodeInvalidMessageDesc;
+            if (![CHSKCheckHelper isValidImages:shareMessage.images]) return CHSKErrorCodeInvalidMessageImages;
+        }
+            break;
+        case CHSKMessageTypeWebPage:
+        {
+            if (![CHSKCheckHelper isValidTitle:shareMessage.title]) return CHSKErrorCodeInvalidMessageTitle;
+            if (![CHSKCheckHelper isValidDesc:shareMessage.desc]) return CHSKErrorCodeInvalidMessageDesc;
+            if (![CHSKCheckHelper isValidURL:shareMessage.url]) return CHSKErrorCodeInvalidMessageURL;
+            if (![CHSKCheckHelper isValidImages:shareMessage.images] && ![CHSKCheckHelper isValidImage:shareMessage.thumbnail]) return CHSKErrorCodeInvalidMessageImages;
+        }
+            break;
+        case CHSKMessageTypeAudio:
+        case CHSKMessageTypeVideo:
+        {
+            if (![CHSKCheckHelper isValidTitle:shareMessage.title]) return CHSKErrorCodeInvalidMessageTitle;
+            if (![CHSKCheckHelper isValidDesc:shareMessage.desc]) return CHSKErrorCodeInvalidMessageDesc;
+            if (![CHSKCheckHelper isValidURL:shareMessage.url]) return CHSKErrorCodeInvalidMessageURL;
+            if (![CHSKCheckHelper isValidImages:shareMessage.images] && ![CHSKCheckHelper isValidImage:shareMessage.thumbnail]) return CHSKErrorCodeInvalidMessageImages;
+        }
+            break;
+    }
+    return CHSKShareMessageValidCode;
+}
+
 - (void)convertShareMessageToQQReq:(CHSKShareMessage *)shareMessage
                  completionHandler:(CHSKMessageConvertCompletionHandler)completionHandler {
     __block NSError *aError = nil;

@@ -6,6 +6,7 @@
 //
 
 #import "NSError+CHShareKit.h"
+#import <CHCategories/CHCategories.h>
 #import "CHSKPrivateDefines.h"
 
 @implementation NSError (CHShareKit)
@@ -13,7 +14,7 @@
 + (NSError *)ch_sk_errorWithCode:(NSInteger)code message:(NSString *)message {
     NSMutableDictionary *userInfo = @{}.mutableCopy;
     userInfo[@"error"] = @(code);
-    userInfo[@"error_description"] = CH_SK_STR_AVOID_NIL(message);
+    userInfo[@"error_description"] = CH_STRING_AVOID_NIL(message);
     return [NSError errorWithDomain:CHSKErrorDomin code:code userInfo:userInfo.copy];
 }
 
