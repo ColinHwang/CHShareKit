@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CHShareKit'
-  s.version          = '0.0.1'
+  s.version          = '0.1.0'
   s.summary          = '分享组件'
   s.homepage         = 'https://github.com/ColinHwang/CHShareKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
