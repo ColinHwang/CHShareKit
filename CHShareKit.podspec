@@ -31,7 +31,6 @@ Pod::Spec.new do |s|
   
   # QQBridge
   s.subspec 'QQBridge' do |qqbridge|
-      qqbridge.summary = 'QQ桥接类'
       qqbridge.source_files = 'CHShareKit/Classes/QQBridge/**/*.{h,m}'
       qqbridge.dependency 'CHShareKit/Core'
       qqbridge.dependency 'CHQQSDK'
@@ -39,7 +38,6 @@ Pod::Spec.new do |s|
   
   # WXBridge
   s.subspec 'WXBridge' do |wxbridge|
-      wxbridge.summary = 'WeChat桥接类'
       wxbridge.source_files = 'CHShareKit/Classes/WXBridge/**/*.{h,m}'
       wxbridge.dependency 'CHShareKit/Core'
       wxbridge.dependency 'WechatOpenSDK'
