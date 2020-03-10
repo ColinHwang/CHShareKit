@@ -7,13 +7,43 @@
 //
 
 #import "CHSKAppDelegate.h"
+#import <CHShareKit/CHShareKit.h>
 
 @implementation CHSKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    // Register
+    [CHSKShare registerActivePlatforms:@[@(CHSKPlatformTypeQQ), @(CHSKPlatformTypeWX)]
+                  configurationHandler:^CHSKPlatformConfiguration *(CHSKPlatformType platformType) {
+        switch (platformType) {
+            case CHSKPlatformTypeQQ:
+            {
+                return [CHSKPlatformConfiguration configurationForQQWithAppId:@"appId" appSecret:@"appSecret"];
+            }
+                break;
+            case CHSKPlatformTypeWX:
+            {
+                return [CHSKPlatformConfiguration configurationForWXWithAppId:@"appId" appSecret:@"appSecret" universalLink:@"universalLink"];
+            }
+                break;
+            default:
+                return nil;
+                break;
+        }
+    }];
     return YES;
+}
+
+/// iOS 9.0以上
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    return [CHSKShare handleOpenURL:url];
+}
+
+/// iOS 9.0以下
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [CHSKShare handleOpenURL:url];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
