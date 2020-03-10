@@ -1,1 +1,1 @@
-../../../../../CHShareKit/Classes/Core/General/Private/CHSKWXCredential.h
+../../../../../CHShareKit/Classes/WXBridge/CHSKWXCredential.h

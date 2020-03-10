@@ -194,6 +194,15 @@
     return flag;
 }
 
+- (BOOL)canHandleOpenURL:(NSURL *)URL {
+    BOOL flag = [super canHandleOpenURL:URL];
+    if (!flag) return NO;
+    if ([URL.scheme isEqualToString:self.platformConfiguration.appHexSchemeId]) return YES; // qq分享
+    if ([URL.scheme isEqualToString:self.platformConfiguration.appSchemeId]) return YES; // qq授权
+    
+    return NO;
+}
+
 - (BOOL)handleOpenURL:(NSURL *)URL {
     BOOL flag = [super handleOpenURL:URL];
     if (!flag) return flag;

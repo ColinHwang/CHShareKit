@@ -1,0 +1,1 @@
+../../../../../CHShareKit/Classes/WXBridge/CHSKWXCheckHelper.h

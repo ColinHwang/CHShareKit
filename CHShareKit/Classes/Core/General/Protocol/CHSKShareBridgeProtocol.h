@@ -15,6 +15,8 @@
 
 - (void)registerPlatform:(CHSKPlatformConfiguration *)configuration;
 
+- (BOOL)canHandleOpenURL:(NSURL *)URL;
+
 - (BOOL)handleOpenURL:(NSURL *)URL;
 
 - (BOOL)isClientInstalled;

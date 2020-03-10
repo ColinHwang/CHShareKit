@@ -1,1 +1,1 @@
-../../../../../CHShareKit/Classes/Core/General/Private/CHSKWXError.h
+../../../../../CHShareKit/Classes/WXBridge/CHSKWXError.h

@@ -134,13 +134,18 @@
     return flag;
 }
 
+- (BOOL)canHandleOpenURL:(NSURL *)URL {
+    BOOL flag = [super canHandleOpenURL:URL];
+    if (!flag) return NO;
+    if ([URL.scheme isEqualToString:self.platformConfiguration.appSchemeId]) return YES;
+    
+    return NO;
+}
+
 - (BOOL)handleOpenURL:(NSURL *)URL {
     BOOL flag = [super handleOpenURL:URL];
     if (!flag) return flag;
-    
-    flag = [URL.scheme isEqualToString:self.platformConfiguration.appSchemeId];
-    if (!flag) return flag;
-    
+        
     flag = [WXApi handleOpenURL:URL delegate:self];
     return flag;
 }

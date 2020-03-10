@@ -59,11 +59,21 @@
 - (BOOL)handleOpenURL:(NSURL *)URL {
     if (!URL.scheme.length) return NO;
     
-    // wx
     BOOL flag = NO;
-    flag = [[CHSKPlatformBridge sharedBridgeWithType:CHSKPlatformTypeWX] handleOpenURL:URL];
+    CHSKPlatformBridge *bridge = nil;
+    // wx
+    bridge = [CHSKPlatformBridge sharedBridgeWithType:CHSKPlatformTypeWX];
+    if ([bridge canHandleOpenURL:URL]) {
+        flag = [bridge handleOpenURL:URL];
+        return  flag;
+    }
+    
     // QQ
-    flag = [[CHSKPlatformBridge sharedBridgeWithType:CHSKPlatformTypeQQ] handleOpenURL:URL];
+    bridge = [CHSKPlatformBridge sharedBridgeWithType:CHSKPlatformTypeQQ];
+    if ([bridge canHandleOpenURL:URL]) {
+        flag = [bridge handleOpenURL:URL];
+        return  flag;
+    }
     return flag;
 }
 

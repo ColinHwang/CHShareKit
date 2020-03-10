@@ -1,1 +1,1 @@
-../../../../../CHShareKit/Classes/Core/General/API/CHSKNetworking+CHSKWX.h
+../../../../../CHShareKit/Classes/WXBridge/CHSKNetworking+CHSKWX.h

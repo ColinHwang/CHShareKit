@@ -10,14 +10,6 @@
 #ifndef CHSKPrivateDefines_h
 #define CHSKPrivateDefines_h
 
-// WX
-FOUNDATION_EXTERN NSString * const CHSKPlatformWXIDKey;
-FOUNDATION_EXTERN NSString * const CHSKPlatformWXSecretKey;
-
-// QQ
-FOUNDATION_EXTERN NSString * const CHSKPlatformQQIDKey;
-FOUNDATION_EXTERN NSString * const CHSKPlatformQQSecretKey;
-
 // Message Regular
 // Share Message Code
 FOUNDATION_EXTERN const NSInteger CHSKShareMessageValidCode;

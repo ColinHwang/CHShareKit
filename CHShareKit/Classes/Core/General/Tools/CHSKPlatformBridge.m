@@ -81,11 +81,14 @@
     return NO;
 }
 
+- (BOOL)canHandleOpenURL:(NSURL *)URL {
+    return URL.scheme.length;
+}
+
 - (BOOL)handleOpenURL:(NSURL *)URL {
     self.isRebackByOpenURL = YES;
-    if (!URL.scheme.length) return NO;
     
-    return YES;
+    return [self canHandleOpenURL:URL];
 }
 
 - (void)willEnterForeground {

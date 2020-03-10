@@ -7,14 +7,6 @@
 
 #import "CHSKPrivateDefines.h"
 
-// WX
-NSString * const CHSKPlatformWXIDKey     = @"CHSKPlatformWXIDKey";
-NSString * const CHSKPlatformWXSecretKey = @"CHSKPlatformWXSecretKey";
-
-// QQ
-NSString * const CHSKPlatformQQIDKey     = @"CHSKPlatformQQIDKey";
-NSString * const CHSKPlatformQQSecretKey = @"CHSKPlatformQQSecretKey";
-
 // Message Regular
 // Share Message Code
 const NSInteger CHSKShareMessageValidCode = 200;

@@ -47,6 +47,9 @@
       "name": "QQBridge",
       "source_files": "CHShareKit/Classes/QQBridge/**/*.{h,m}",
       "dependencies": {
+        "CHShareKit/Core": [
+
+        ],
         "CHQQSDK": [
 
         ]
@@ -56,6 +59,9 @@
       "name": "WXBridge",
       "source_files": "CHShareKit/Classes/WXBridge/**/*.{h,m}",
       "dependencies": {
+        "CHShareKit/Core": [
+
+        ],
         "WechatOpenSDK": [
 
         ]
