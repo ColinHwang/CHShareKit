@@ -42,5 +42,4 @@ Pod::Spec.new do |s|
       wxbridge.dependency 'CHShareKit/Core'
       wxbridge.dependency 'WechatOpenSDK'
   end
-  
 end

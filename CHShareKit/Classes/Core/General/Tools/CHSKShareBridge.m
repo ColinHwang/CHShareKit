@@ -115,9 +115,6 @@
 
 - (CHSKPlatformType)getTargetPlatformType:(CHSKPlatformType)platformType {
     switch (platformType) {
-        case CHSKPlatformTypeUndefined:
-            return CHSKPlatformTypeUndefined;
-            
         case CHSKPlatformTypeWX:
         case CHSKPlatformTypeWXTimeline:
         case CHSKPlatformTypeWXSession:
@@ -127,6 +124,9 @@
         case CHSKPlatformTypeQQFriends:
         case CHSKPlatformTypeQZone:
             return CHSKPlatformTypeQQ;
+        
+        default:
+            return platformType;
     }
 }
 
