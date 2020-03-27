@@ -36,6 +36,13 @@ Pod::Spec.new do |s|
       qqbridge.dependency 'CHQQSDK'
   end
   
+  # WeiboBridge
+  s.subspec 'WeiboBridge' do |weibobridge|
+      weibobridge.source_files = 'CHShareKit/Classes/WeiboBridge/**/*.{h,m}'
+      weibobridge.dependency 'CHShareKit/Core'
+      weibobridge.dependency 'Weibo_SDK'
+  end
+  
   # WXBridge
   s.subspec 'WXBridge' do |wxbridge|
       wxbridge.source_files = 'CHShareKit/Classes/WXBridge/**/*.{h,m}'

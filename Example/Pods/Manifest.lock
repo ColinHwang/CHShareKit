@@ -384,25 +384,30 @@ PODS:
     - "CHCategories/Foundation/NSObject/NSObject+CHBase"
     - "CHCategories/Foundation/NSValue/NSValue+CHBase"
   - CHQQSDK (3.3.7)
-  - CHShareKit (0.0.1):
-    - CHShareKit/Core (= 0.0.1)
-    - CHShareKit/QQBridge (= 0.0.1)
-    - CHShareKit/WXBridge (= 0.0.1)
-  - CHShareKit/Core (0.0.1):
+  - CHShareKit (0.1.0):
+    - CHShareKit/Core (= 0.1.0)
+    - CHShareKit/QQBridge (= 0.1.0)
+    - CHShareKit/WeiboBridge (= 0.1.0)
+    - CHShareKit/WXBridge (= 0.1.0)
+  - CHShareKit/Core (0.1.0):
     - AFNetworking
     - CHCategories
     - SDWebImage
     - YYModel
-  - CHShareKit/QQBridge (0.0.1):
+  - CHShareKit/QQBridge (0.1.0):
     - CHQQSDK
     - CHShareKit/Core
-  - CHShareKit/WXBridge (0.0.1):
+  - CHShareKit/WeiboBridge (0.1.0):
+    - CHShareKit/Core
+    - Weibo_SDK
+  - CHShareKit/WXBridge (0.1.0):
     - CHShareKit/Core
     - WechatOpenSDK
-  - SDWebImage (5.6.0):
-    - SDWebImage/Core (= 5.6.0)
-  - SDWebImage/Core (5.6.0)
+  - SDWebImage (5.6.1):
+    - SDWebImage/Core (= 5.6.1)
+  - SDWebImage/Core (5.6.1)
   - WechatOpenSDK (1.8.6.2)
+  - Weibo_SDK (3.2.3)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -415,6 +420,7 @@ SPEC REPOS:
     - CHQQSDK
     - SDWebImage
     - WechatOpenSDK
+    - Weibo_SDK
     - YYModel
 
 EXTERNAL SOURCES:
@@ -425,9 +431,10 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CHCategories: 7c4507d75f150111c507f8648a6e162a2af71be6
   CHQQSDK: 58ec4282474766f6229f0dc5041b6ef1bf145368
-  CHShareKit: 6acf428d1d019bdc46beaa33433f562e64005b9e
-  SDWebImage: 21b19f56b4226cdfe3aefe4e6848dc43ed129a86
+  CHShareKit: 7b0169bbbb98284c60c299226d5124d15309c2f7
+  SDWebImage: 7edb9c3ea661e77a66661f7f044de8c1b55d1120
   WechatOpenSDK: 8b3ba4239193d1112205c139c94e21934e8f369a
+  Weibo_SDK: 652ca78c2f7147a5de5e75e7cbea89838a81772a
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: 4b9531589a81e7e2094e7b6e05160382059f4df7
