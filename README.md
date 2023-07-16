@@ -1,3 +1,6 @@
+[![License](https://img.shields.io/cocoapods/l/CHShareKit.svg?style=flat)](https://cocoapods.org/pods/CHShareKit)
+[![Platform](https://img.shields.io/cocoapods/p/CHShareKit.svg?style=flat)](https://cocoapods.org/pods/CHShareKit)
+
 # CHShareKit
 
 ## 中文介绍
